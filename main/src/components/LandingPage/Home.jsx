@@ -14,7 +14,7 @@ const Home = () => {
       {/* middle section add below  @ uday*/}
 
       {/* bottom section add below @ satya*/}
-      <ImageSlider />
+      <ImageSlider /><br/><br/><br/><br/>
       <BlogBox /><br/><br/><br/><br/>
       <Footer/>
     </div>

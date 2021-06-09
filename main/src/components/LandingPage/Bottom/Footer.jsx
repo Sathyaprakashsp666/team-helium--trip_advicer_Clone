@@ -32,7 +32,7 @@ const Footer = () => {
     "Android App",
   ];
   return (
-    <>
+    <div className={styles.footer_cont_top}>
       <div className={styles.footer_cont}>
         <div className={styles.footer_cont_div}>
           <div>
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
