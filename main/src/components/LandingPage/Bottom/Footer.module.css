@@ -1,6 +1,13 @@
+.footer_cont_top{
+  margin: auto;
+  width: 1330px;
+  min-height: 250px;
+  background-color: #faf1ed;
+}
+
 .footer_cont {
   display: flex;
-  width: 1300px;
+  width: 1200px;
   height: 250px;
   margin: auto;
   background-color: #faf1ed;
@@ -34,7 +41,7 @@
 
 .footer_botton_cont {
   display: flex;
-  width: 1300px;
+  width: 1200px;
   height: 100px;
   /* border: 1px solid rgba(182, 66, 182, 0.659); */
   margin: auto;

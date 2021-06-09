@@ -11,6 +11,7 @@ const BlogBox = () => {
       </div>
 
       {/* visit dubai button  blog container*/}
+      <div className={styles.visit_cont_main}>
       <div className={styles.visit_cont}>
         <div>
           <img
@@ -42,6 +43,7 @@ const BlogBox = () => {
             <p>14 Items</p>
           </div>
         </div>
+      </div>
       </div>
       <br />
       <br />

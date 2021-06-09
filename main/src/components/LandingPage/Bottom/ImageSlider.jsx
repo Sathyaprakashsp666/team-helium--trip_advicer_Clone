@@ -2,22 +2,22 @@ import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 import React, { useState } from "react";
-
+const links = [
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/36/37/eb/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/60/b0/bd/bora-bora.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/dd/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f4/70/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/d8/43/20/cayo-levantado-is-the.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/cd/04/e4/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/72/8e/caption.jpg?w=500&h=500&s=1",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/48/36/4f/caption.jpg?w=500&h=500&s=1",
+];
 const ImageSlider = () => {
-  const [images, setImages] = useState([
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/36/37/eb/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/60/b0/bd/bora-bora.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/dd/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f4/70/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/d8/43/20/cayo-levantado-is-the.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/cd/04/e4/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/72/8e/caption.jpg?w=500&h=500&s=1",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/48/36/4f/caption.jpg?w=500&h=500&s=1",
-  ]);
+  const [images, setImages] = useState(links);
 
   const [currentImageIdx, setCurrentImagIdx] = useState(0);
 
@@ -58,9 +58,9 @@ const ImageSlider = () => {
       : activeImageSourcesFromState;
 
   return (
-    <div style={{marginLeft:"50px"}}>
+    <div style={{ marginLeft: "50px" }}>
       <button onClick={prevSlide}>
-        <FaArrowAltCircleLeft />
+        <FaArrowAltCircleLeft  style={{height:"50px", width:"50px",borderRadius:"50px"}}/>
       </button>
       {imageSourcesToDisplay.map((image, index) => (
         <img
@@ -69,13 +69,13 @@ const ImageSlider = () => {
           alt=""
           style={{
             margin: "10px",
-            width: "272px",
-            height: "272px",
+            width: "270px",
+            height: "270px",
           }}
         />
       ))}
       <button onClick={nextSlide}>
-        <FaArrowAltCircleRight />
+        <FaArrowAltCircleRight  style={{height:"50px", width:"50px",borderRadius:"50px"}} />
       </button>
     </div>
   );
