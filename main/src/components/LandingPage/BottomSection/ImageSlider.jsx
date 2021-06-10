@@ -63,7 +63,7 @@ const ImageSlider = () => {
         <FaArrowAltCircleLeft  style={{height:"50px", width:"50px",borderRadius:"50px"}}/>
       </button>
       {imageSourcesToDisplay.map((image, index) => (
-        <img
+        <img 
           key={index}
           src={image}
           alt=""
