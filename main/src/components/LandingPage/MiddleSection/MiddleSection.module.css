@@ -1,0 +1,64 @@
+/* HomeRental section */
+
+.header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 103px;
+}
+.homerental_top_cont {
+  display: flex;
+  width: 1184px;
+  margin: 0 83px 0 83px;
+  padding: 0 24px 0 24px;
+  height: 568px;
+  /* border: 1px solid cyan; */
+}
+
+.left_cont {
+  width: 310px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+.right_cont {
+  /* display: flex; */
+  width: 1000px;
+  /* border: 1px solid rgb(0, 255, 30); */
+ 
+}
+.right_cont div{
+  width: 270px;
+  height: 270px;
+  float: left;
+  margin: 5px;
+
+}
+.right_cont p{
+line-height:5px;
+}
+.homerental_location{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.homerental_count{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.homerental_location:hover{
+  color: #545454;
+ text-decoration:underline;
+}
+.right_cont img {
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}.right_cont img:hover {
+  opacity: .5;
+}
+/* home rental part ended here */
+
+/* Travel Guide section starts here */
