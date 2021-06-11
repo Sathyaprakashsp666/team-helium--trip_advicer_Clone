@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../components/LandingPage/Home";
 import { Route, Switch } from "react-router-dom";
 import FetchingRental from "../components/FetchingRentals/FetchingRental";
+import HotelSearch from "../components/Hotels/HotelSearch";
 
 const AllRoutes = () => {
   return (
@@ -12,6 +13,9 @@ const AllRoutes = () => {
         </Route>
         <Route exact path="/vagamoon">
           <FetchingRental />
+        </Route>
+        <Route path="/hotel">
+          <HotelSearch />
         </Route>
       </Switch>
     </div>
