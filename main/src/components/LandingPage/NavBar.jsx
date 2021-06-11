@@ -1,8 +1,4 @@
-function NavBAr(){
-    return(
-        <div>
-            Nav Bar
-        </div>
-    )
+function NavBAr() {
+  return <div>Nav Bar</div>;
 }
-export {NavBAr}
+export { NavBAr };
