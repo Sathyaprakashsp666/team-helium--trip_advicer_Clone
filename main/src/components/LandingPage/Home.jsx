@@ -6,7 +6,7 @@ import Footer from "./BottomSection/Footer";
 import ImageSlider from "./BottomSection/ImageSlider";
 import HomeRental from "./MiddleSection/HomeRental";
 import TravellerGuide from "./MiddleSection/TravellerGuide";
-import { NavBAr } from "./NavBar";
+// import { NavBAr } from "./NavBar";
 //||||||| ceadbbf
 // import { NavBAr } from "./NavBar";
 //=======
@@ -20,9 +20,9 @@ const Home = () => {
 {/* <<<<<<< HEAD */}
         <NavBar/>
 {/* ||||||| 64f2efa */}
-        <NavBAr/>
+        {/* <NavBAr/> */}
 =======
-      <NavBAr />
+      {/* <NavBAr /> */}
 {/* >>>>>>> 725c067a1c61cf1f93e17dee69e6b333c8e14921 */}
       {/* middle section add below  @ uday*/}
       <HomeRental />

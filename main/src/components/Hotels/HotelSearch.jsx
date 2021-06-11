@@ -1,15 +1,32 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from "axios"
+import Header from './Header'
+import LeftSide from './LeftSide'
+import ShowHotelInfo from './ShowHotelInfo'
 
 const HotelSearch = () => {
     const [hotel, setHotel] = useState('')
+    const [hotelData, setHotelData] = useState([])
+
     const handleHotelSearch = async() => {
-        const res = await fetch('http://localhost:4500/pune')
-        console.log(res)
+        const {data} = await axios.get('http://localhost:4500/pune')
+        setHotelData(data)
     }
+    useEffect(() => {
+       handleHotelSearch()
+    }, [])
+    console.log(hotelData)
     return (
         <div>
-            <input onChange={(e) => setHotel(e.target.value)} ></input>
-            <button onClick={handleHotelSearch}></button>
+        <Header />
+        <LeftSide />
+        
+        {hotelData.map(item => {
+            return <>
+            <ShowHotelInfo  item={item}/>
+            </>
+        })}
+        
         </div>
     )
 }
