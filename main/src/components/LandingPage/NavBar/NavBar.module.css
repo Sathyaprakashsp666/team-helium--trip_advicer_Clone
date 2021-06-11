@@ -1,0 +1,79 @@
+.image {
+  width: 180px;
+  margin-left: 380px;
+}
+.imagee {
+  width: 20px;
+  height: 20px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: var(--ta-sans-serif);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.direction {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.button {
+  width: 80px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.hotels {
+  width: 30px;
+  margin-top: 5px;
+}
+.dire {
+  display: flex;
+  gap: 40px;
+}
+.firstbut {
+  margin-left: 20%;
+}
+.firstbutbb {
+  width: 165px;
+  height: 120px;
+  border-radius: 20px;
+}
+.firstbutbb:hover {
+  background-color: black;
+  color: white;
+}
+.p:hover {
+  color: white;
+}
+.search {
+  background-image: url("https://static.tacdn.com/img2/brand/home/home510v2_dt.jpeg");
+  height: 350px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 20%;
+}
+.search > form > input {
+  height: 50px;
+  width: 780px;
+  border-radius: 25px;
+  margin-top: 150px;
+}
+.icon {
+  width: 50px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.b {
+  margin-top: 160px;
+}

@@ -1,11 +1,11 @@
 import React from "react";
-import { NavBAr } from "./NavBar";
+import { NavBar } from "./NavBar/NavBar";
 
 const Home = () => {
   return (
     <div>
       {/* Navbar add below   @ kandur*/}
-        <NavBAr/>
+        <NavBar/>
       {/* middle section add below  @ uday*/}
 
       {/* bottom section add below @ satya*/}
