@@ -109,11 +109,11 @@ const Footer = () => {
         <div className={styles.footer_botton_cont_right}>
           <div className={styles.btns}>
             <button>PLN</button>
-            <button>IND</button>
+            <button>India</button>
           </div>
           <div style={{ display: "flex" }}>
             <div>
-              <IoLogoFacebook />
+              <IoLogoFacebook/>
             </div>
             <div>
               <FaTwitter />

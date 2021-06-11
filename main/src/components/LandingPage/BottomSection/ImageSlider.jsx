@@ -1,5 +1,6 @@
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import styles from "./Footer.module.css";
 
 import React, { useState } from "react";
 const links = [
@@ -58,26 +59,45 @@ const ImageSlider = () => {
       : activeImageSourcesFromState;
 
   return (
-    <div style={{ marginLeft: "50px" }}>
-      <button onClick={prevSlide}>
-        <FaArrowAltCircleLeft  style={{height:"50px", width:"50px",borderRadius:"50px"}}/>
-      </button>
-      {imageSourcesToDisplay.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt=""
-          style={{
-            margin: "10px",
-            width: "270px",
-            height: "270px",
-          }}
-        />
-      ))}
-      <button onClick={nextSlide}>
-        <FaArrowAltCircleRight  style={{height:"50px", width:"50px",borderRadius:"50px"}} />
-      </button>
-    </div>
+    <>
+      <p style={{ fontSize: "24px", fontWeight: "700", marginLeft: "100px" }}>
+        Top destinations for beach lovers
+      </p>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: "400",
+          color: "#333333",
+          marginLeft: "100px",
+        }}
+      >
+        Recommended based on your activity
+      </p>
+      <div style={{ marginLeft: "50px" }}>
+        <button onClick={prevSlide}>
+          <FaArrowAltCircleLeft
+            style={{ height: "50px", width: "50px", borderRadius: "50px" }}
+          />
+        </button>
+        {imageSourcesToDisplay.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            style={{
+              margin: "10px",
+              width: "270px",
+              height: "270px",
+            }}
+          />
+        ))}
+        <button onClick={nextSlide}>
+          <FaArrowAltCircleRight
+            style={{ height: "50px", width: "50px", borderRadius: "50px" }}
+          />
+        </button>
+      </div>
+    </>
   );
 };
 
