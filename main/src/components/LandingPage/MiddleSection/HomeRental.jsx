@@ -23,7 +23,7 @@ const HomeRental = () => {
               <Link to="">
                 <div>
                   <img src={item.img} alt="" width="100%" />
-                  <Link className={styles.homerental_location}>
+                  <Link to={item.to} className={styles.homerental_location}>
                     {item.location}
                   </Link>
                   <p className={styles.homerental_count}>{item.count}rentals</p>

@@ -23,7 +23,7 @@ const TravellerGuide = () => {
               alt=""
               width="20px"
             />
-           &nbsp; By Tripadvicer
+            &nbsp; By Tripadvicer
           </p>
         </div>
         <div>
@@ -36,13 +36,13 @@ const TravellerGuide = () => {
             Europe's best Beaches, 2019
           </Link>
           <p className={styles.traveller_guide_items}>10 items</p>
-          <p  className={styles.traveller_guide_logo}>
+          <p className={styles.traveller_guide_logo}>
             <img
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/bf/4f/56/tripadvisor.jpg?w=100&h=-1&s=1"
               alt=""
               width="20px"
             />
-           &nbsp; By Tripadvicer
+            &nbsp; By Tripadvicer
           </p>
         </div>
         <div>
@@ -55,13 +55,13 @@ const TravellerGuide = () => {
             The world's best Beaches , 2019
           </Link>
           <p className={styles.traveller_guide_items}>10 items</p>
-          <p  className={styles.traveller_guide_logo}>
+          <p className={styles.traveller_guide_logo}>
             <img
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/bf/4f/56/tripadvisor.jpg?w=100&h=-1&s=1"
               alt=""
               width="20px"
             />{" "}
-           &nbsp; By Tripadvicer
+            &nbsp; By Tripadvicer
           </p>
         </div>
       </div>
