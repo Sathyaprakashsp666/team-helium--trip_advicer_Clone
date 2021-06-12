@@ -1,0 +1,47 @@
+.rentalas_top_cont {
+    width: 1230px;
+    min-height: 2000px;
+    margin: 16px 35px 0px 35px;
+    background-color: #ffffff;
+    padding: 0 24px 0 24px;
+    border: 1px solid saddlebrown;
+  }
+  
+  .rentals_left_cont {
+    width: 240px;
+    min-height: 2000px;
+    padding: 24px 24px 24px 24px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    margin-right: 30px;
+  }
+  .rentals_right_cont {
+    width: 900px;
+    min-height: 2000px;
+    border: 1px solid black;
+    float: left;
+  }
+  
+  /* //For Containers */
+  .container_top {
+    display: flex;
+    height: 220px;
+    width: 850px;
+    border: 1px solid #e0e0e0;
+    padding: 16px 16px 16px 16px;
+    background-color: #ffffff;
+    border: 1px solid red;
+  }
+  
+  .container_top div {
+      width: 33%;
+      border: 1px solid green;
+  }
+  .info_cont div {
+      width: 280px;
+      height: 21px;
+      border: 1px solid cyan;
+      margin: 0 0 5px 0;
+  
+  }
+  
