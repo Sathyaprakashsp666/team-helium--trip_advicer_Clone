@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "../components/LandingPage/Home";
 import { Route, Switch } from "react-router-dom";
-
+import RentalPage from "../components/RentalPage/RentalPage";
 
 
 import HotelSearch from "../components/Hotels/HotelSearch";
@@ -14,7 +14,7 @@ const AllRoutes = () => {
           <Home />
         </Route>
         <Route exact path="/vagamoon">
-          component
+          <RentalPage/>
         </Route>
         <Route path="/hotel">
           <HotelSearch />
