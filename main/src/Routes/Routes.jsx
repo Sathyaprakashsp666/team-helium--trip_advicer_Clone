@@ -14,7 +14,7 @@ const AllRoutes = () => {
           <Home />
         </Route>
         <Route exact path="/vagamoon">
-          <FetchingRental />
+          component
         </Route>
         <Route path="/hotel">
           <HotelSearch />
