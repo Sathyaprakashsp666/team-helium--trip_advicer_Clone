@@ -1,0 +1,15 @@
+.LeftContainer div {
+    width: 250px;
+    min-height: 50px;
+    border: 1px solid red;
+    margin: 10px;
+    font-size: 14px;
+    color: #474747;
+}
+.clear_filter_btn{
+    background-color: rgb(1, 28, 1);
+    color: white;
+    height: 50px;
+    width: 250px;
+    font-size: 15px
+}

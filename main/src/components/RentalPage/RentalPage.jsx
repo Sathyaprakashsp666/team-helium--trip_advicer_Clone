@@ -3,23 +3,29 @@ import React, { useState, useEffect } from "react";
 import styles from "./RentalPage.module.css";
 import RentalsContainer from "./RentalContainer";
 import axios from "axios";
+import LeftContainer from "./LeftContainer";
 
 const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
   useEffect(() => {
     getData();
   }, []);
 
   const getData = () => {
+    setIsLoading(true);
     axios
       .get("https://json-mock-server-trip-advicer.herokuapp.com/rentals")
       .then((res) => {
         console.log(res.data);
         setRentalData(res.data);
+        setIsLoading(false);
       })
       .catch(function (error) {
         // handle error
         console.log(error);
+        setIsError(true);
       });
   };
 
@@ -27,7 +33,9 @@ const RentalPage = () => {
     <div>
       <h1>Rental Page</h1>
       <div className={styles.rentalas_top_cont}>
-        <div className={styles.rentals_left_cont}></div>
+        <div className={styles.rentals_left_cont}>
+          <LeftContainer />
+        </div>
         <div className={styles.rentals_right_cont}>
           <div className={styles.sort_cont}>
             <div>{rentalData.length} Rentals in Vagamoon</div>
@@ -40,6 +48,16 @@ const RentalPage = () => {
                 <option value="rating">Traveller Rating</option>
               </select>
             </div>
+          </div>
+          <div className={styles.loading}>
+            {isLoading ? (
+              <img
+                src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
+                alt="....loading"
+              />
+            ) : (
+              ""
+            )}
           </div>
 
           {rentalData.map((item, index) => {
