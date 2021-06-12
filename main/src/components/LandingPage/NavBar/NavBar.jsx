@@ -55,7 +55,7 @@ function NavBar() {
           <Button
             className={styles.firstbutbb}
             value={
-              <Link className={styles.link}>
+              <Link className={styles.link} to="/hotel">
                 <Hotels
                   value="Hotels"
                   src="https://cdn3.iconfinder.com/data/icons/housicon-pt-one-line/64/Bed_Sleep_Hotel_Rest-2-256.png"
