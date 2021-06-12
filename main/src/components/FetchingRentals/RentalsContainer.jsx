@@ -15,9 +15,7 @@ const RentalsContainer = () => {
         <div></div>
       </div>
       {/* price containet */}
-      <div>
-          
-      </div>
+      <div></div>
     </div>
   );
 };
