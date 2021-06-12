@@ -1,7 +1,8 @@
 import React from "react";
 import "./hotel.css";
 
-const ShowHotelInfo = ({ item }) => {
+const ShowHotelInfo = ({ item}) => {
+
   //console.log(item);
   return (
     <div className="show-hotel-main-div">
@@ -15,7 +16,7 @@ const ShowHotelInfo = ({ item }) => {
         <div className="partner-logo-div">
           <img src={item.Thumbnail} alt="partner_logo"></img>
 
-          <h2>{item.price}</h2>
+          <h2>₹{item.price}</h2>
           <button>View deal</button>
         </div>
         <div></div>

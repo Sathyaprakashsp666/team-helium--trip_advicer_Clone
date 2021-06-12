@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Header";
 import LeftSide from "./LeftSide";
-import ShowHotelInfo from "./ShowHotelInfo";
 import SortingDiv from "./SortingDiv";
 
 const HotelSearch = () => {
@@ -22,15 +21,19 @@ const HotelSearch = () => {
         <div>
             <Header />
             <LeftSide />
-            <SortingDiv  hotelData={hotelData}/>
 
-            {hotelData.map((item) => {
+        <SortingDiv hoteldata={hotelData} />
+            
+
+        
+
+            {/* {hotelData.map((item) => {
                 return (
                     <>
-                        <ShowHotelInfo item={item} />
+                        <ShowHotelInfo item={item} optionValue={optionValue} />
                     </>
                 );
-            })}
+            })} */}
             {/* <button disabled={page === 1} onClick={() => setPage(page - 1)}>Prev Page</button>
             <button disabled={hotelData.length < 15} onClick={() => setPage(page + 1)}>Next Page</button> */}
         </div>

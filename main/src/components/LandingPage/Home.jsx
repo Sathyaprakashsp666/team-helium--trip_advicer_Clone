@@ -21,7 +21,7 @@ const Home = () => {
         <NavBar/>
 {/* ||||||| 64f2efa */}
         {/* <NavBAr/> */}
-=======
+{/* ======= */}
       {/* <NavBAr /> */}
 {/* >>>>>>> 725c067a1c61cf1f93e17dee69e6b333c8e14921 */}
       {/* middle section add below  @ uday*/}
