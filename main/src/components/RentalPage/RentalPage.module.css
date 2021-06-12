@@ -21,6 +21,17 @@
     border: 1px solid black;
     float: left;
   }
+  .sort_cont{
+      display: flex;
+      height: 50px;
+      width: 900px;
+      border: 1px solid cyan;
+  }
+  .sort_cont div {
+      width: 50%;
+      height: 50px;
+      border: 1px solid red;
+  }
   
   /* //For Containers */
   .container_top {
