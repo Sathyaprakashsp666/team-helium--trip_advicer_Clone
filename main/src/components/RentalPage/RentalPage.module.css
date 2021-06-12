@@ -4,7 +4,7 @@
   margin: 16px 35px 0px 35px;
   background-color: #ffffff;
   padding: 0 24px 0 24px;
-  border: 1px solid saddlebrown;
+  /* border: 1px solid saddlebrown; */
 }
 
 .rentals_left_cont {
@@ -31,6 +31,26 @@
   width: 50%;
   height: 50px;
   /* border: 1px solid red; */
+}
+.loading {
+  margin-left: 360px;
+  margin-top: 20px;
+}
+.head_title {
+  text-align: center;
+}
+.top_calender {
+  display: flex;
+  width: 1200px;
+  height: 100px;
+  border: 1px solid gray;
+  margin: auto;
+  align-items: center;
+}
+.top_calender div {
+  width: 33%;
+  height: 70px;
+  border: 1px solid red;
 }
 
 /* //For Containers */
@@ -84,7 +104,6 @@
   background-color: white;
   border: none;
 }
-.loading {
-  margin-left: 360px;
-  margin-top: 50px;
+.more_info{
+    color: #575757;
 }

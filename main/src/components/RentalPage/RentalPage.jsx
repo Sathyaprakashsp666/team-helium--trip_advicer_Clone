@@ -31,7 +31,16 @@ const RentalPage = () => {
 
   return (
     <div>
-      <h1>Rental Page</h1>
+      <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
+      <div className={styles.top_calender}>
+        <div>
+          <input type="date" />
+        </div>
+        <div>
+          <input type="date" />
+        </div>
+        <div></div>
+      </div>
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
