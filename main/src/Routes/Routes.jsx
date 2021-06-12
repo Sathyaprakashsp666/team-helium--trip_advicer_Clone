@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../components/LandingPage/Home";
 import { Route, Switch } from "react-router-dom";
 
-import FetchingRental from "../components/LandingPage/FetchingRentals/FetchingRental";
+
 
 import HotelSearch from "../components/Hotels/HotelSearch";
 
