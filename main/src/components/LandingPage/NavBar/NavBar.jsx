@@ -8,6 +8,8 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
+import { AbhuDhabi } from './components/LandingPage/ThingsTodo/AbhuDhabi';
+
 
 function NavBar() {
   return (
@@ -155,6 +157,8 @@ function NavBar() {
       <div>
         <Search />
       </div>
+      <AbhuDhabi/>
+
     </div>
   );
 }
