@@ -1,0 +1,73 @@
+.visit_btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.btn {
+  background-color: #000000;
+  color: #ffffff;
+  width: 341.359px;
+  height: 51px;
+  font-size: 16px;
+}
+.visit_cont_main {
+  width: 1300px;
+  height: 400px;
+  margin: auto;
+  background-color: #faf1ed;
+}
+.visit_cont {
+  display: flex;
+  width: 740px;
+  height: 370px;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.visit_cont div {
+  width: 368px;
+  height: 368px;
+  /* border: 1px solid black; */
+}
+.visit_cont_text div {
+  width: 330px;
+  height: 300px;
+  /* border: 1px solid red; */
+  margin-left: 35px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 16px;
+}
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  columns: #333333;
+}
+.color_g {
+  color: #545454;
+}
+/* //weekend bag  */
+
+.weekend_bag {
+  width: 1136px;
+  height: 500px;
+  /* border: 1px solid cyan; */
+  margin: auto;
+  background-image: url(https://images.unsplash.com/photo-1587467541972-f1522d7b7449?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwYmFnfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60://image.shutterstock.com/image-photo/leather-bag-fashion-concept-600w-146549204.jpg);
+  background-repeat: round;
+}
+.weekend_bag_header {
+  font-size: 48px;
+  color: #ffffff;
+  padding-top: 350px;
+  padding-left: 50px;
+}
+.weekend_bag_btn {
+  background-color: #ffffff;
+  height: 47px;
+  width: 180px;
+  margin-left: 50px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+}
