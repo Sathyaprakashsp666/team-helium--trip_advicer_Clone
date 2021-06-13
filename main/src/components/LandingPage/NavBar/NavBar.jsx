@@ -8,8 +8,7 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
-import { AbhuDhabi } from './components/LandingPage/ThingsTodo/AbhuDhabi';
-
+import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
 
 function NavBar() {
   return (
@@ -48,7 +47,9 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Buttonn cls={styles.button} value="Sign in" />
+            <Link to='/login'>
+              <Buttonn cls={styles.button} value="Sign in" />
+            </Link>
           </div>
         </div>
       </div>
@@ -157,8 +158,7 @@ function NavBar() {
       <div>
         <Search />
       </div>
-      <AbhuDhabi/>
-
+      <AbhuDhabi />
     </div>
   );
 }
