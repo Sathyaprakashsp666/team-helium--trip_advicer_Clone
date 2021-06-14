@@ -1,6 +1,6 @@
 .image {
   width: 180px;
-  margin-left: 380px;
+  margin-left: 20px;
 }
 .imagee {
   width: 20px;
@@ -8,7 +8,7 @@
   float: left;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .link {
@@ -23,6 +23,8 @@
   display: flex;
   flex-direction: row;
   gap: 70px;
+  margin-top: 50px;
+  margin-left: 2%;
 }
 .button {
   width: 80px;
@@ -41,12 +43,13 @@
   gap: 40px;
 }
 .firstbut {
-  margin-left: 20%;
+  margin-left: 20px;
 }
 .firstbutbb {
   width: 165px;
-  height: 120px;
+  height: 80px;
   border-radius: 20px;
+  background-color: white;
 }
 .firstbutbb:hover {
   background-color: black;
@@ -56,24 +59,31 @@
   color: white;
 }
 .search {
-  background-image: url("https://static.tacdn.com/img2/brand/home/home510v2_dt.jpeg");
-  height: 350px;
+  background-image: url("https://static.tacdn.com/img2/brand/home/home614_dt.jpg");
+  height: 400px;
   width: 1300px;
   margin: auto;
   margin-top: 50px;
-  margin-left: 20%;
+  margin-left: 20px;
 }
 .search > form > input {
-  height: 50px;
+  height: 60px;
   width: 780px;
   border-radius: 25px;
-  margin-top: 150px;
+  margin: auto;
+  /* margin-top: 50px; */
+  margin-left: 18%;
+
 }
 .icon {
   width: 50px;
   border-radius: 20px;
   margin-top: 15px;
+  
 }
 .b {
   margin-top: 160px;
+}
+.abhu{
+  width: 25%;
 }

@@ -2,9 +2,10 @@
   width: 1230px;
   min-height: 2000px;
   margin: 16px 35px 0px 35px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 0 24px 0 24px;
   /* border: 1px solid saddlebrown; */
+  background-color: #f2f2f2;
 }
 
 .rentals_left_cont {
@@ -115,6 +116,7 @@
 }
 .more_info {
   color: #575757;
+
 }
 .rental_length {
   font-size: 16px;
