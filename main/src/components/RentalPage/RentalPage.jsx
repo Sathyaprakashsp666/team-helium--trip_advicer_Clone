@@ -4,6 +4,7 @@ import styles from "./RentalPage.module.css";
 import RentalsContainer from "./RentalContainer";
 import axios from "axios";
 import LeftContainer from "./LeftContainer";
+import RentalNavbar from "./RentalNavbar";
 
 const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
@@ -31,6 +32,7 @@ const RentalPage = () => {
 
   return (
     <div>
+      <RentalNavbar/>
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
       <div className={styles.top_calender}>
         <div>

@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../components/LandingPage/Home";
 import { Route, Switch } from "react-router-dom";
 import RentalPage from "../components/RentalPage/RentalPage";
+import  Login from "../components/Login"
 
 
 import HotelSearch from "../components/Hotels/HotelSearch";
@@ -18,6 +19,12 @@ const AllRoutes = () => {
         </Route>
         <Route path="/hotel">
           <HotelSearch />
+        </Route>
+        <Route path='/login'>
+          <Login/>
+        </Route>
+        <Route>
+          404 Page Not Found
         </Route>
       </Switch>
     </div>
