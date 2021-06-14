@@ -1,12 +1,13 @@
-
 import './App.css';
-import Home from './components/LandingPage/Home';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AllRoutes from "./Routes/Routes";
 
 
 function App() {
   return (
     <div>
-      <Home/>
+      <AllRoutes />
     </div>
   );
 }

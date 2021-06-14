@@ -3,13 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+<<<<<<< HEAD
+||||||| 76d02cd
+    "bootstrap": "^5.0.1",
+=======
+    "bootstrap": "^5.0.1",
+
+>>>>>>> 93e2bc2b74eb7d28bf4bfe2dbaa8701ea45a74e2
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-multi-carousel": "^2.6.3",
+||||||| 76d02cd
+=======
+    "react-icons": "^4.2.0",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+>>>>>>> 93e2bc2b74eb7d28bf4bfe2dbaa8701ea45a74e2
     "react-scripts": "4.0.3",
     "semantic-ui-react": "^2.0.3",
     "web-vitals": "^1.0.1"
