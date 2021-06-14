@@ -7,6 +7,12 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
+
+// import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
+
+
+
+
 import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
 
 function NavBar() {
@@ -87,7 +93,7 @@ function NavBar() {
         <div>
           <Button
             value={
-              <Link className={styles.link}>
+              <Link className={styles.link} to='/things'>
                 <Hotels
                   value={
                     <p>
@@ -157,7 +163,7 @@ function NavBar() {
       <div>
         <Search />
       </div>
-      <AbhuDhabi />
+     <AbhuDhabi />
     </div>
   );
 }
