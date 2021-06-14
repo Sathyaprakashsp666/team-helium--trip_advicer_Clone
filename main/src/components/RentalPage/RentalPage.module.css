@@ -35,7 +35,7 @@
   /* border: 1px solid red; */
 }
 .sorting_cont {
-  padding-left: 500px;
+  padding-left: 300px;
 }
 .sorting_cont_input{
   width: 152px;
@@ -71,6 +71,7 @@
   border: 1px solid #e0e0e0;
   padding: 16px 16px 16px 16px;
   background-color: #ffffff;
+  margin-left: 80px;
   /* border: 1px solid red; */
 }
 
