@@ -8,7 +8,10 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
-import { AbhuDhabi } from './components/LandingPage/ThingsTodo/AbhuDhabi';
+
+import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
+
+
 
 
 function NavBar() {
@@ -57,7 +60,7 @@ function NavBar() {
           <Button
             className={styles.firstbutbb}
             value={
-              <Link className={styles.link}>
+              <Link className={styles.link} to="/hotel">
                 <Hotels
                   value="Hotels"
                   src="https://cdn3.iconfinder.com/data/icons/housicon-pt-one-line/64/Bed_Sleep_Hotel_Rest-2-256.png"
@@ -87,7 +90,7 @@ function NavBar() {
         <div>
           <Button
             value={
-              <Link className={styles.link}>
+              <Link className={styles.link} to='/things'>
                 <Hotels
                   value={
                     <p>
@@ -157,8 +160,8 @@ function NavBar() {
       <div>
         <Search />
       </div>
-      <AbhuDhabi/>
-
+      {/* <AbhuDhabi/> */}
+      
     </div>
   );
 }
