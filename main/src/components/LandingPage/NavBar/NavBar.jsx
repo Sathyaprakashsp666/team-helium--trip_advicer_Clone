@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Buttonn } from "./Buttonn";
-
 import { Hotels } from "./Hotels";
 import { Image } from "./Image";
 import styles from "./NavBar.module.css";
