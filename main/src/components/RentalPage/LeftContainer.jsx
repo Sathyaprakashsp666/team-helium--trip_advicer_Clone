@@ -7,8 +7,8 @@ const LeftContainer = () => {
       <div>
         <button className={styles.clear_filter_btn}>Clear Filter</button>
       </div>
-      <div>Map</div>
-      <div>Distance</div>
+      {/* <div>Map</div>
+      <div>Distance</div> */}
       <div>
         <form>
           <label for="price">Price Per Night :</label>

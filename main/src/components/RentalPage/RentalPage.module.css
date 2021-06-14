@@ -26,11 +26,20 @@
   height: 50px;
   width: 900px;
   /* border: 1px solid cyan; */
+
 }
 .sort_cont div {
   width: 50%;
   height: 50px;
   /* border: 1px solid red; */
+}
+.sorting_cont {
+  padding-left: 500px;
+}
+.sorting_cont_input{
+  width: 152px;
+  height: 14px;
+  border: 1px solid #d3d3d3;
 }
 .loading {
   margin-left: 360px;
@@ -104,6 +113,11 @@
   background-color: white;
   border: none;
 }
-.more_info{
-    color: #575757;
+.more_info {
+  color: #575757;
+}
+.rental_length {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
 }

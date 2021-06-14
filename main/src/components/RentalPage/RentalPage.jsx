@@ -32,9 +32,9 @@ const RentalPage = () => {
 
   return (
     <div>
-      <RentalNavbar/>
+      <RentalNavbar />
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
-      <div className={styles.top_calender}>
+      {/* <div className={styles.top_calender}>
         <div>
           <input type="date" />
         </div>
@@ -42,15 +42,20 @@ const RentalPage = () => {
           <input type="date" />
         </div>
         <div></div>
-      </div>
+      </div> */}
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
         </div>
         <div className={styles.rentals_right_cont}>
           <div className={styles.sort_cont}>
-            <div>{rentalData.length} Rentals in Vagamoon</div>
             <div>
+              <span className={styles.rental_length}>
+                {rentalData.length} Rentals
+              </span>{" "}
+              in Vagamoon
+            </div>
+            <div className={styles.sorting_cont}>
               <label for="rental"> Sort By:</label>
               <select name="rental" id="rental" form="rentalform">
                 <option value="tripsort">Triadvicer Sort</option>
