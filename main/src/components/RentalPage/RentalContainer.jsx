@@ -35,17 +35,16 @@ const RentalsContainer = (props) => {
 
   const submitData = () => {
     setPricebtn(true);
-    console.log(`'start is' ${start}`);
-    console.log(`'end is' ${end}`);
+    // console.log(`'start is' ${start}`);
+    // console.log(`'end is' ${end}`);
 
     //to get days from start and end date
     var startDate = Date.parse(start);
     var endDate = Date.parse(end);
     var timeDiff = endDate - startDate;
     let daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    console.log(daysDiff);
+    // console.log(daysDiff);
     setDays(daysDiff);
-
     setStart("");
     setEnd("");
   };
@@ -142,7 +141,6 @@ const RentalsContainer = (props) => {
         </div>
         {/* price containet */}
         <div>
-        
           <div style={{ display: "flex", width: "250px", margin: "10px" }}>
             <input type="date" onChange={handleStart} value={start} />
             <input type="date" onChange={handleEnd} value={end} />
@@ -150,7 +148,8 @@ const RentalsContainer = (props) => {
           {pricebtn ? (
             <p className={styles.price_cont}>
               {" "}
-              <span className={styles.pln}>PLN</span> {price * days} per night
+              <span className={styles.pln}>PLN &nbsp;{price} </span> per night <br />
+              PLN {price * days} per {days} &nbsp;nights
             </p>
           ) : (
             ""

@@ -10,7 +10,7 @@ const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [options, setOptions] = useState("");
+  const [sortByCost, setSortByCost] = useState(null);
 
   useEffect(() => {
     getData();
@@ -21,7 +21,7 @@ const RentalPage = () => {
     axios
       .get("https://json-mock-server-trip-advicer.herokuapp.com/rentals")
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setRentalData(res.data);
         setIsLoading(false);
       })
@@ -33,10 +33,24 @@ const RentalPage = () => {
   };
 
   const handleChange = (e) => {
-    setOptions(e.target.value);
-    console.log(options);
+    setSortByCost(e.target.value);
   };
-  console.log(options);
+  console.log(sortByCost);
+
+  const sortCondition = (a, b) => {
+    if (sortByCost == null) {
+      return null;
+    }
+    if (sortByCost == "lowtohigh") {
+      return a.price - b.price;
+    }
+    if (sortByCost == "hightolow") {
+      return b.price - a.price;
+    }
+    if (sortByCost == "rating") {
+      return a.reviews - b.reviews;
+    }
+  };
 
   return (
     <div>
@@ -82,7 +96,7 @@ const RentalPage = () => {
           </div>
 
           {rentalData &&
-            rentalData?.map((item, index) => {
+            rentalData?.sort(sortCondition).map((item, index) => {
               return (
                 <>
                   <RentalsContainer {...item} key={index} />
