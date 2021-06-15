@@ -1,6 +1,6 @@
 .image {
   width: 180px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .imagee {
   width: 20px;
@@ -22,17 +22,19 @@
 .direction {
   display: flex;
   flex-direction: row;
-  gap: 70px;
+  gap: 50px;
   margin-top: 50px;
   margin-left: 2%;
 }
 .button {
   width: 80px;
-  height: 50px;
+  height: 40px;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
   font-weight: 600;
   border-radius: 25px;
+  border: none;
+  /* padding: 10px 16px 10px 16px; */
 }
 .hotels {
   width: 30px;
@@ -40,45 +42,52 @@
 }
 .dire {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .firstbut {
   margin-left: 20px;
+  text-align: center;
 }
 .firstbutbb {
-  width: 165px;
-  height: 80px;
-  border-radius: 20px;
-  background-color: white;
+  width: 181px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  text-align: center;
 }
 .firstbutbb:hover {
   background-color: black;
-  color: white;
+  color: #FFFFFF;
+ 
 }
+
 .p:hover {
-  color: white;
+  color: #FFFFFF;
 }
 .search {
   background-image: url("https://static.tacdn.com/img2/brand/home/home614_dt.jpg");
   height: 400px;
-  width: 1300px;
+  width: 1200px;
   margin: auto;
   margin-top: 50px;
-  margin-left: 20px;
+  
+  /* margin-left: 20px; */
 }
 .search > form > input {
   height: 60px;
-  width: 780px;
+  width: 783px;
   border-radius: 25px;
   margin: auto;
   /* margin-top: 50px; */
   margin-left: 18%;
+  border: none;
 
 }
 .icon {
   width: 50px;
   border-radius: 20px;
   margin-top: 15px;
+  margin-left: 100px;
   
 }
 .b {
@@ -86,4 +95,7 @@
 }
 .abhu{
   width: 25%;
+}
+.link:hover{
+  color: #FFFFFF;
 }
