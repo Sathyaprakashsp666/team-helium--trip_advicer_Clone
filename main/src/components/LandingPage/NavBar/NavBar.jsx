@@ -8,12 +8,6 @@ import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
 
-// import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
-
-
-
-
-import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
 
 function NavBar() {
   return (
@@ -163,7 +157,6 @@ function NavBar() {
       <div>
         <Search />
       </div>
-     <AbhuDhabi />
     </div>
   );
 }
