@@ -1,12 +1,17 @@
 .show-hotel-main-div {
   width: 72%;
   height: 280px;
-  border: 1px solid black;
+  /* border: 1px solid rgb(122, 120, 120); */
   /* margin-bottom: 30px; */
   float: right;
   margin-top: 30px;
   margin-right: 30px;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
+.show-hotel-main-div:hover{
+  box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .hotel_thumbnail {
   width: 30%;
   height: 100%;
