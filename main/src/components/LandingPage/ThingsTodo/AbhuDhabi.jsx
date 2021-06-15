@@ -1,3 +1,4 @@
+
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { PopularThings } from "./PopularThings";
@@ -12,5 +13,6 @@ function AbhuDhabi() {
       <Cultural />
     </div>
   );
+
 }
 export { AbhuDhabi };

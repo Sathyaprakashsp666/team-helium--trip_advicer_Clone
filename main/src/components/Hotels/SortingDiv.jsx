@@ -10,24 +10,24 @@ const SortingDiv = ({ hoteldata }) => {
   const [optionValue, setOptionValue] = useState("");
   console.log(optionValue)
 
-  const lowToHigh = [];
-  const highToLow = [];
+  // const lowToHigh = [];
+  // const highToLow = [];
 
 
 
-  hoteldata.sort(function (a, b) {
-    return Number(a.price) - Number(b.price);
-  });
-  lowToHigh.push(hoteldata);
-  console.log(lowToHigh[0]);
+  // hoteldata.sort(function (a, b) {
+  //   return Number(a.price) - Number(b.price);
+  // });
+  // lowToHigh.push(hoteldata);
+  // console.log(lowToHigh[0]);
 
 
 
-  hoteldata.sort(function (a, b) {
-    return Number(b.price) - Number(a.price);
-  });
-  highToLow.push(hoteldata);
-  console.log(highToLow[0]);
+  // hoteldata.sort(function (a, b) {
+  //   return Number(b.price) - Number(a.price);
+  // });
+  // highToLow.push(hoteldata);
+  // console.log(highToLow[0]);
 
   return (
     <>
