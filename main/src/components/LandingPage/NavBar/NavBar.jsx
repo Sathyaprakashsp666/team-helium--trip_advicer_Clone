@@ -9,6 +9,10 @@ import { NavSub } from "./Navsub";
 import { Search } from "./Search";
 import { AuthContext } from "../../../ContextApi/AuthContext";
 
+import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
+
+
+
 
 
 
@@ -69,7 +73,14 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div style={{ display: "flex", gap: "20px", marginTop: "50px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "20px",
+          marginTop: "50px",
+          marginLeft: "40px",
+        }}
+      >
         <div className={styles.firstbut}>
           <Button
             className={styles.firstbutbb}
@@ -86,15 +97,9 @@ function NavBar() {
         <div className={styles.firstbutbb}>
           <Button
             value={
-              <Link to='/vagamoon' className={styles.link}>
+              <Link to="/vagamoon" className={styles.link}>
                 <Hotels
-                  value={
-                    <p>
-                      Holiday
-                      <br />
-                      Homes
-                    </p>
-                  }
+                  value={<p> Holiday Homes </p>}
                   src="https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/home-alt-256.png"
                 />
               </Link>
@@ -106,13 +111,7 @@ function NavBar() {
             value={
               <Link className={styles.link} to="/things">
                 <Hotels
-                  value={
-                    <p>
-                      Things to
-                      <br />
-                      do
-                    </p>
-                  }
+                  value={<p>Things to do</p>}
                   src="https://cdn3.iconfinder.com/data/icons/lineapp-icons-for-mobile-app/100/History-512.png"
                 />
               </Link>
@@ -124,14 +123,14 @@ function NavBar() {
             value={
               <Link className={styles.link}>
                 <Hotels
-                  value={<p>Restaura...</p>}
+                  value={<p>Restaurants</p>}
                   src="https://cdn4.iconfinder.com/data/icons/hotel-and-hotel-services-2/85/restaurant_meal_dinner_fork_knife-256.png"
                 />
               </Link>
             }
           />
         </div>
-        <div>
+        {/* <div>
           <Button
             value={
               <Link className={styles.link}>
@@ -146,16 +145,12 @@ function NavBar() {
               </Link>
             }
           />
-        </div>
+        </div> */}
         <Button
           value={
             <Link className={styles.link}>
               <Hotels
-                value={
-                  <p>
-                    Travel <br /> Forums
-                  </p>
-                }
+                value={<p>Travel Forums</p>}
                 src="https://cdn4.iconfinder.com/data/icons/epic-outlines/30/messages-128.png"
               />
             </Link>
@@ -165,7 +160,8 @@ function NavBar() {
           <Button
             value={
               <Link className={styles.link}>
-                <Hotels value={<p>More ...</p>} />
+                <Hotels value={<p>More</p>} 
+                src='https://image.flaticon.com/icons/png/128/512/512142.png'/>
               </Link>
             }
           />
