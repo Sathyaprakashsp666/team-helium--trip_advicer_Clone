@@ -85,7 +85,7 @@ function NavBar() {
         <div className={styles.firstbutbb}>
           <Button
             value={
-              <Link className={styles.link}>
+              <Link to='/vagamoon' className={styles.link}>
                 <Hotels
                   value={
                     <p>

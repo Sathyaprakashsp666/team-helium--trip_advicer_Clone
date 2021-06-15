@@ -10,12 +10,11 @@ const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [sortType, setSortType] = useState("lowtohigh");
-  const [data, setData] = useState([]);
+  const [options, setOptions] = useState("");
+
   useEffect(() => {
     getData();
-    sortArray();
-  }, [sortType]);
+  }, []);
 
   const getData = () => {
     setIsLoading(true);
@@ -33,39 +32,17 @@ const RentalPage = () => {
       });
   };
 
-  // const handleChange = (e) => {
-  //   setOptions(e.target.value);
-  //   console.log(options);
-  // };
-  // console.log(options);
-
-  const sortArray = (type) => {
-    const types = {
-      low: "lowtohigh",
-      high: "hightolow",
-      rating: "rating",
-    };
-    const sortProperty = types[type];
-    const sorted = [...rentalData].sort(
-      (a, b) => b[sortProperty] - a[sortProperty]
-    );
-    console.log(sorted);
-    setData(sorted);
+  const handleChange = (e) => {
+    setOptions(e.target.value);
+    console.log(options);
   };
+  console.log(options);
 
   return (
     <div>
       <RentalNavbar />
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
-      {/* <div className={styles.top_calender}>
-        <div>
-          <input type="date" />
-        </div>
-        <div>
-          <input type="date" />
-        </div>
-        <div></div>
-      </div> */}
+
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
@@ -84,7 +61,7 @@ const RentalPage = () => {
                 name="rental"
                 id="rental"
                 form="rentalform"
-                onChange={(e) => setSortType(e.target.value)}
+                onChange={handleChange}
               >
                 <option value="tripsort">Triadvicer Sort</option>
                 <option value="lowtohigh">Price: Low to High</option>
