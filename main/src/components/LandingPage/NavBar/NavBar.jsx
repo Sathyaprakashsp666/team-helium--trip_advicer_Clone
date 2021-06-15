@@ -22,7 +22,7 @@ function NavBar() {
   const { isAuth, url } = useContext(AuthContext);
   return (
     <div>
-      <div>
+      <div className={styles.sticky}>
         <div className={styles.direction}>
           <Link to="/">
             {" "}
@@ -106,7 +106,7 @@ function NavBar() {
             }
           />
         </div>
-        <div>
+        <div >
           <Button
             value={
               <Link className={styles.link} to="/things">

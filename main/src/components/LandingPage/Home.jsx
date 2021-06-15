@@ -5,18 +5,14 @@ import Footer from "./BottomSection/Footer";
 import ImageSlider from "./BottomSection/ImageSlider";
 import HomeRental from "./MiddleSection/HomeRental";
 import TravellerGuide from "./MiddleSection/TravellerGuide";
-
-
 import { NavBar } from "./NavBar/NavBar";
 
 const Home = () => {
   return (
     <div>
       {/* Navbar add below   @ kandur*/}
-        <NavBar/>
+      <NavBar />
 
-     {/* middle section add below  @ uday*/}
-      {/* middle section add below  @ uday*/}
       <HomeRental />
       <TravellerGuide />
       {/* bottom section add below @ satya*/}
