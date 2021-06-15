@@ -8,7 +8,15 @@ import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
 import { AuthContext } from "../../../ContextApi/AuthContext";
+
 import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
+
+
+
+
+
+
+
 
 function NavBar() {
   const { isAuth, url } = useContext(AuthContext);
@@ -162,7 +170,6 @@ function NavBar() {
       <div>
         <Search />
       </div>
-      <AbhuDhabi />
     </div>
   );
 }
