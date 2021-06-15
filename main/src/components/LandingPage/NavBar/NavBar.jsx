@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Buttonn } from "./Buttonn";
@@ -7,9 +7,15 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
+import { AuthContext } from "../../../ContextApi/AuthContext";
+
+
+
+
 
 
 function NavBar() {
+  const { isAuth, url } = useContext(AuthContext);
   return (
     <div>
       <div>
@@ -46,8 +52,19 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link to='/login'>
-              <Buttonn cls={styles.button} value="Sign in" />
+            <Link to="/login">
+              {isAuth ? (
+                <div>
+                  <img
+                    style={{ borderRadius: "50%" }}
+                    src={url}
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              ) : (
+                <Buttonn cls={styles.button} value="Sign in" />
+              )}
             </Link>
           </div>
         </div>
@@ -69,7 +86,7 @@ function NavBar() {
         <div className={styles.firstbutbb}>
           <Button
             value={
-              <Link className={styles.link}>
+              <Link to='/vagamoon' className={styles.link}>
                 <Hotels
                   value={
                     <p>
@@ -87,7 +104,7 @@ function NavBar() {
         <div>
           <Button
             value={
-              <Link className={styles.link} to='/things'>
+              <Link className={styles.link} to="/things">
                 <Hotels
                   value={
                     <p>
