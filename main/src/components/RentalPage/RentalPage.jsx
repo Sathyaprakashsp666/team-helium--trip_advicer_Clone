@@ -10,9 +10,12 @@ const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [sortType, setSortType] = useState("lowtohigh");
+  const [data, setData] = useState([]);
   useEffect(() => {
     getData();
-  }, []);
+    sortArray();
+  }, [sortType]);
 
   const getData = () => {
     setIsLoading(true);
@@ -30,11 +33,31 @@ const RentalPage = () => {
       });
   };
 
+  // const handleChange = (e) => {
+  //   setOptions(e.target.value);
+  //   console.log(options);
+  // };
+  // console.log(options);
+
+  const sortArray = (type) => {
+    const types = {
+      low: "lowtohigh",
+      high: "hightolow",
+      rating: "rating",
+    };
+    const sortProperty = types[type];
+    const sorted = [...rentalData].sort(
+      (a, b) => b[sortProperty] - a[sortProperty]
+    );
+    console.log(sorted);
+    setData(sorted);
+  };
+
   return (
     <div>
-      <RentalNavbar/>
+      <RentalNavbar />
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
-      <div className={styles.top_calender}>
+      {/* <div className={styles.top_calender}>
         <div>
           <input type="date" />
         </div>
@@ -42,17 +65,27 @@ const RentalPage = () => {
           <input type="date" />
         </div>
         <div></div>
-      </div>
+      </div> */}
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
         </div>
         <div className={styles.rentals_right_cont}>
           <div className={styles.sort_cont}>
-            <div>{rentalData.length} Rentals in Vagamoon</div>
             <div>
+              <span className={styles.rental_length}>
+                {rentalData.length} Rentals
+              </span>{" "}
+              in Vagamoon
+            </div>
+            <div className={styles.sorting_cont}>
               <label for="rental"> Sort By:</label>
-              <select name="rental" id="rental" form="rentalform">
+              <select
+                name="rental"
+                id="rental"
+                form="rentalform"
+                onChange={(e) => setSortType(e.target.value)}
+              >
                 <option value="tripsort">Triadvicer Sort</option>
                 <option value="lowtohigh">Price: Low to High</option>
                 <option value="hightolow">Price: High to Low</option>
@@ -71,13 +104,14 @@ const RentalPage = () => {
             )}
           </div>
 
-          {rentalData.map((item, index) => {
-            return (
-              <>
-                <RentalsContainer {...item} />
-              </>
-            );
-          })}
+          {rentalData &&
+            rentalData?.map((item, index) => {
+              return (
+                <>
+                  <RentalsContainer {...item} key={index} />
+                </>
+              );
+            })}
         </div>
       </div>
     </div>
