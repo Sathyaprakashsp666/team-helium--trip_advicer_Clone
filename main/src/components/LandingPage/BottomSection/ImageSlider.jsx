@@ -1,5 +1,5 @@
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 import React, { useState } from "react";
@@ -74,9 +74,9 @@ const ImageSlider = () => {
         Recommended based on your activity
       </p>
       <div style={{ marginLeft: "50px" }}>
-        <button onClick={prevSlide}>
-          <FaArrowAltCircleLeft
-            style={{ height: "50px", width: "50px", borderRadius: "50px" }}
+        <button className={styles.arrow} onClick={prevSlide}>
+          <FaRegArrowAltCircleLeft
+            style={{ height: "50px", width: "50px", borderRadius: "50%" }}
           />
         </button>
         {imageSourcesToDisplay.map((image, index) => (
@@ -91,8 +91,8 @@ const ImageSlider = () => {
             }}
           />
         ))}
-        <button onClick={nextSlide}>
-          <FaArrowAltCircleRight
+        <button className={styles.arrow} onClick={nextSlide}>
+          <FaRegArrowAltCircleRight
             style={{ height: "50px", width: "50px", borderRadius: "50px" }}
           />
         </button>

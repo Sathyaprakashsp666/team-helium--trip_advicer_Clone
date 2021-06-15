@@ -52,7 +52,7 @@ const TravellerGuide = () => {
             width="90%"
           />
           <Link className={styles.traveller_guide_link}>
-            The world's best Beaches , 2019
+            World's best Beaches , 2019
           </Link>
           <p className={styles.traveller_guide_items}>10 items</p>
           <p className={styles.traveller_guide_logo}>

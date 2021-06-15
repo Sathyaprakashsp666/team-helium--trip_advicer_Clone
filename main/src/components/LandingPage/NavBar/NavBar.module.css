@@ -25,12 +25,20 @@
   gap: 50px;
   margin-top: 50px;
   margin-left: 2%;
+  border-bottom: #e0e0e0;
+}
+.sticky {
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  border-bottom: #e0e0e0;
 }
 .button {
   width: 80px;
   height: 40px;
   background-color: black;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   border-radius: 25px;
   border: none;
@@ -43,6 +51,7 @@
 .dire {
   display: flex;
   gap: 20px;
+  text-align: center;
 }
 .firstbut {
   margin-left: 20px;
@@ -51,18 +60,18 @@
 .firstbutbb {
   width: 181px;
   height: 48px;
+  border: 1px solid black;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
 }
 .firstbutbb:hover {
   background-color: black;
-  color: #FFFFFF;
- 
+  color: #ffffff;
 }
 
 .p:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .search {
   background-image: url("https://static.tacdn.com/img2/brand/home/home614_dt.jpg");
@@ -70,7 +79,7 @@
   width: 1200px;
   margin: auto;
   margin-top: 50px;
-  
+
   /* margin-left: 20px; */
 }
 .search > form > input {
@@ -81,21 +90,19 @@
   /* margin-top: 50px; */
   margin-left: 18%;
   border: none;
-
 }
 .icon {
   width: 50px;
   border-radius: 20px;
   margin-top: 15px;
   margin-left: 100px;
-  
 }
 .b {
   margin-top: 160px;
 }
-.abhu{
+.abhu {
   width: 25%;
 }
-.link:hover{
-  color: #FFFFFF;
+.link:hover {
+  color: #ffffff;
 }

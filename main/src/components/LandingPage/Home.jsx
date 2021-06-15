@@ -6,7 +6,7 @@ import ImageSlider from "./BottomSection/ImageSlider";
 import HomeRental from "./MiddleSection/HomeRental";
 import TravellerGuide from "./MiddleSection/TravellerGuide";
 
-import { Routes } from "./ThingsTodo/Routes";
+// import { Routes } from "./ThingsTodo/Routes";
 
 import { NavBar } from "./NavBar/NavBar";
 
@@ -14,10 +14,10 @@ const Home = () => {
   return (
     <div>
       {/* Navbar add below   @ kandur*/}
-        <NavBar/>
+      <NavBar />
 
-        <Routes/>
-     {/* middle section add below  @ uday*/}
+      {/* <Routes/> */}
+      {/* middle section add below  @ uday*/}
       {/* middle section add below  @ uday*/}
       <HomeRental />
       <TravellerGuide />
