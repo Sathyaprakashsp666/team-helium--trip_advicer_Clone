@@ -148,3 +148,60 @@ hr{
   margin-top: 20px;
   padding-left: 20px;
 }
+
+
+
+
+/* paginations */
+
+.paginationButtons{
+  width: 72%;
+  height: 40px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  list-style: none;
+  display: flex;
+  
+
+}
+.paginationButtons a {
+  float: left;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  height: 40px;
+  
+  
+}
+
+.previousnBtn{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  margin-right: 250px;
+  color: rgb(160, 158, 158);
+  padding-top: 5px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid rgb(160, 158, 158);
+}
+.previousnBtn:hover{
+  color: rgb(160, 158, 158);
+}
+.nextBtn{
+  margin-left: 250px;
+  width: 95px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+.nextBtn:hover{
+  background: black;
+  color: white;
+}

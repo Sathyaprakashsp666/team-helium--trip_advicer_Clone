@@ -8,7 +8,7 @@ const SortingDiv = ({ hoteldata }) => {
 //   console.log(defaultValue);
 
   const [optionValue, setOptionValue] = useState("");
-  console.log(optionValue)
+  //console.log(optionValue)
 
   // const lowToHigh = [];
   // const highToLow = [];
@@ -44,13 +44,13 @@ const SortingDiv = ({ hoteldata }) => {
           </select>
         </div>
       </div>
-      {hoteldata.map((item) => {
+      {/* {hoteldata.map((item) => {
         return (
           <>
             <ShowHotelInfo item={item} />
           </>
         );
-      })}
+      })} */}
     </>
   );
 };

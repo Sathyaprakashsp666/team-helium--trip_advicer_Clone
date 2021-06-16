@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const LeftSide = () => {
   const [rangeVlaue, setRnageValue] = useState(0);
-  const handleOnRnageChange = (e, data) => {
+  const handleOnRnageChange = (e) => {
     setRnageValue(e.target.value)
-    console.log(rangeVlaue)
+   console.log(rangeVlaue)
   }
   return (
     <div className="left-sidebar-div">
@@ -32,6 +32,7 @@ const LeftSide = () => {
       <hr />
       <div className="left-price-slide-div">
         <h4>Price</h4>
+        <h5>₹ 0 - ₹ {rangeVlaue}</h5>
         <input className="input-range"
           max={12000}
           min={0}

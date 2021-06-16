@@ -1,7 +1,7 @@
 import React from "react";
 import "./hotel.css";
 
-const ShowHotelInfo = ({ item}) => {
+const ShowHotelInfo = (item) => {
 
   //console.log(item);
   return (
