@@ -6,6 +6,7 @@ import ReactPaginate from "react-paginate";
 import "./hotel.css";
 import FaqHotel from "./FaqHotel";
 import BottomInfo from "./BottomInfo";
+import HotelFooter from "./HotelFooter";
 
 const HotelSearch = () => {
   const [sortByCost, setSortByCost] = useState(null);
@@ -125,6 +126,7 @@ const HotelSearch = () => {
       </div>
       <FaqHotel />
       <BottomInfo/>
+      <HotelFooter/>
     </div>
     {/* <Footer /> */}
     </>
