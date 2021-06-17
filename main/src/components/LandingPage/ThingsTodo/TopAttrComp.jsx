@@ -1,27 +1,36 @@
+// import React from "react";
+// import { Carousel } from "react-responsive-carousel";
+
+// let Images = [
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/07/ec/88/photo5jpg.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/fb/98/bb/grand-mosque.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/ba/54/24/photo0jpg.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/fb/98/3e/abu-dhabi-tour-with-grand.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/ba/54/26/photo2jpg.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/ba/54/25/photo1jpg.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/1a/46/89/caption.jpg?w=400&h=400&s=1",
+//   "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/1a/2e/66/ig-ralphemerson-deperalta.jpg?w=400&h=400&s=1"
+// ];
+
+// export default () => (
+//   <Carousel autoPlay>
+//         {Images.map((imgg) => {
+//       return (
+//         <div>
+//           <img src={imgg} />
+//         </div>
+//       );
+//     })}
+//   </Carousel>
+// );
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios'
 // import { Image } from "semantic-ui-react";
 
-const imagess = [
-  "https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550223640-23097fc71cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550330039-a54e15ed9d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1549737328-8b9f3252b927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1549833284-6a7df91c1f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1549985908-597a09ef0a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-];
 
 
 function TopAttrComp(props){
-
-
     const [data,setData] = React.useState([])
     let images = []
     function getData(){
@@ -38,41 +47,40 @@ function TopAttrComp(props){
     React.useEffect(() => {getData()},[])
     {images = data.map((item) =>{ return( [item.imgs,item.txt,item.site,item.status,item.commentby,item.comment])})}
     console.log(images);
-
     return(
         <div>
             {images.slice(0, 2).map(image => {
                     return (
                         <div>
-                        <Carousel>
-                        <div>
-                        {image[0].map((imgg) => {return (
-                            
-                             <div>
-                            <img
-                        style={{ width: "20%", height: "100%" }}
-                        src={imgg}
-                    />
-                        </div> 
-                        )})}
-                        </div>
+                            <Carousel axis={"horizontal"}>
                         
-                        </Carousel>
+                            {image[0].map((imgg) => {return (
+                            
+                                <div>
+                                    <img style={{ width: "20%", height: "100%" }} src={imgg}/>
+                                    <h3>{image[1]}</h3>
+                                    <p>{image[2]}</p>
+                                    <p>{image[3]}</p>
+                                    <div >
+                                        <img src={image[4][0]} alt="" style={{borderRadius:"50px"}} />
+                                        <p style={{marginTop:"-40px",marginLeft:"60px"}}>{image[4][1]}</p>
+                                    </div>
+                                    <p>{image[5]}</p>
+                                </div> 
+                        )})}
+                        
+                        
+                     </Carousel>
+                         <div>
+                             {console.log(image[0])}
+                         </div>
    
                     
-                    </div>
-                    );
-                })}
-                {/* {imagess.map((imgg) => {
-                    return (
-                        <div>
-                        <img src={imgg} />
-                        </div>
-                    );
-                    })} */}
+                     </div>
+                     );
+                 })}
 
-                    
-        </div>
-    )
-}
-export {TopAttrComp}
+         </div>
+     )
+ }
+ export {TopAttrComp}
