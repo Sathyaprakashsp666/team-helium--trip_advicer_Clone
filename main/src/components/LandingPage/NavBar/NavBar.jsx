@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Buttonn } from "./Buttonn";
@@ -7,12 +7,22 @@ import { Image } from "./Image";
 import styles from "./NavBar.module.css";
 import { NavSub } from "./Navsub";
 import { Search } from "./Search";
+import { AuthContext } from "../../../ContextApi/AuthContext";
+
+import { AbhuDhabi } from "../../LandingPage/ThingsTodo/AbhuDhabi";
+
+
+
+
+
+
 
 
 function NavBar() {
+  const { isAuth, url } = useContext(AuthContext);
   return (
     <div>
-      <div>
+      <div className={styles.sticky}>
         <div className={styles.direction}>
           <Link to="/">
             {" "}
@@ -22,7 +32,7 @@ function NavBar() {
             />{" "}
           </Link>
           <div style={{ marginLeft: "540px" }}>
-            <Link to="/edit" className={styles.link}>
+            <Link to="/edit" className={styles.link_top}>
               <NavSub
                 text={"Review"}
                 src="https://static.thenounproject.com/png/1416596-200.png"
@@ -30,7 +40,7 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link className={styles.link} to="/trips">
+            <Link className={styles.link_top} to="/trips">
               <NavSub
                 text="Trips"
                 src="https://cdn0.iconfinder.com/data/icons/feather/96/heart-512.png"
@@ -38,7 +48,7 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link className={styles.link} to="/alerts">
+            <Link className={styles.link_top} to="/alerts">
               <NavSub
                 text="Alerts"
                 src="https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/bell_ring_notification_alarm-512.png"
@@ -46,13 +56,31 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link to='/login'>
-              <Buttonn cls={styles.button} value="Sign in" />
+            <Link to="/login">
+              {isAuth ? (
+                <div>
+                  <img
+                    style={{ borderRadius: "50%" }}
+                    src={url}
+                    alt=""
+                    width="50%"
+                  />
+                </div>
+              ) : (
+                <Buttonn cls={styles.button} value="Sign in" />
+              )}
             </Link>
           </div>
         </div>
       </div>
-      <div style={{ display: "flex", gap: "20px", marginTop: "50px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "20px",
+          marginTop: "50px",
+          marginLeft: "40px",
+        }}
+      >
         <div className={styles.firstbut}>
           <Button
             className={styles.firstbutbb}
@@ -69,33 +97,21 @@ function NavBar() {
         <div className={styles.firstbutbb}>
           <Button
             value={
-              <Link className={styles.link}>
+              <Link to="/vagamoon" className={styles.link}>
                 <Hotels
-                  value={
-                    <p>
-                      Holiday
-                      <br />
-                      Homes
-                    </p>
-                  }
+                  value={<p> Holiday Homes </p>}
                   src="https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/home-alt-256.png"
                 />
               </Link>
             }
           />
         </div>
-        <div>
+        <div >
           <Button
             value={
-              <Link className={styles.link} to='/things'>
+              <Link className={styles.link} to="/things">
                 <Hotels
-                  value={
-                    <p>
-                      Things to
-                      <br />
-                      do
-                    </p>
-                  }
+                  value={<p>Things to do</p>}
                   src="https://cdn3.iconfinder.com/data/icons/lineapp-icons-for-mobile-app/100/History-512.png"
                 />
               </Link>
@@ -107,14 +123,14 @@ function NavBar() {
             value={
               <Link className={styles.link}>
                 <Hotels
-                  value={<p>Restaura...</p>}
+                  value={<p>Restaurants</p>}
                   src="https://cdn4.iconfinder.com/data/icons/hotel-and-hotel-services-2/85/restaurant_meal_dinner_fork_knife-256.png"
                 />
               </Link>
             }
           />
         </div>
-        <div>
+        {/* <div>
           <Button
             value={
               <Link className={styles.link}>
@@ -129,16 +145,12 @@ function NavBar() {
               </Link>
             }
           />
-        </div>
+        </div> */}
         <Button
           value={
             <Link className={styles.link}>
               <Hotels
-                value={
-                  <p>
-                    Travel <br /> Forums
-                  </p>
-                }
+                value={<p>Travel Forums</p>}
                 src="https://cdn4.iconfinder.com/data/icons/epic-outlines/30/messages-128.png"
               />
             </Link>
@@ -148,7 +160,8 @@ function NavBar() {
           <Button
             value={
               <Link className={styles.link}>
-                <Hotels value={<p>More ...</p>} />
+                <Hotels value={<p>More</p>} 
+                src='https://image.flaticon.com/icons/png/128/512/512142.png'/>
               </Link>
             }
           />

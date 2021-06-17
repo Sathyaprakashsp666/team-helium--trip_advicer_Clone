@@ -27,7 +27,6 @@
   height: 50px;
   width: 900px;
   /* border: 1px solid cyan; */
-
 }
 .sort_cont div {
   width: 50%;
@@ -35,9 +34,9 @@
   /* border: 1px solid red; */
 }
 .sorting_cont {
-  padding-left: 500px;
+  padding-left: 300px;
 }
-.sorting_cont_input{
+.sorting_cont_input {
   width: 152px;
   height: 14px;
   border: 1px solid #d3d3d3;
@@ -71,6 +70,7 @@
   border: 1px solid #e0e0e0;
   padding: 16px 16px 16px 16px;
   background-color: #ffffff;
+  margin-left: 80px;
   /* border: 1px solid red; */
 }
 
@@ -116,10 +116,21 @@
 }
 .more_info {
   color: #575757;
-
+  border: none;
 }
 .rental_length {
   font-size: 16px;
   color: black;
   font-weight: 600;
+  margin-left: 100px;
+}
+.more_info_cont{
+  padding-left: 50px;
+}
+.calender input{
+  width: 80px;
+}
+.calender {
+  color: #474747;
+  font-size: 13px;
 }

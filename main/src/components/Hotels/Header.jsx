@@ -1,4 +1,5 @@
 import React from "react";
+import RentalNavbar from "../RentalPage/RentalNavbar"
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
         height: "340px",
         border: "1px solid black",
       }}
-    ></div>
+    >
+      <RentalNavbar />
+    </div>
   );
 };
 

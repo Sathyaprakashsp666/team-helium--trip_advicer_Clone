@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./RentalNavbar.module.css";
 import { GrSearch } from "react-icons/gr";
 // import { MdRateReview } from "react-icons/md";
 // import { GrSearch } from "react-icons/gr";
+import { AuthContext } from "../../ContextApi/AuthContext";
+import { Link } from "react-router-dom";
 
 const RentalNavbar = () => {
+  const { isAuth, url } = useContext(AuthContext);
+
   return (
     <div className={styles.navbar__top_cont}>
       <div>
-        <div>
-          <img
-            src="https://static.tacdn.com/img2/brand_refresh/special/pride_month_Tripadvisor_lockup_horizontal_secondary.svg"
-            alt=""
-            width="100%"
-          />
-        </div>
+        <Link to="/">
+          <div>
+            <img
+              src="https://static.tacdn.com/img2/brand_refresh/special/pride_month_Tripadvisor_lockup_horizontal_secondary.svg"
+              alt=""
+              width="100%"
+            />
+          </div>
+        </Link>
         <div className={styles.navbar__search}>
           <button>
             <GrSearch />
@@ -55,7 +61,23 @@ const RentalNavbar = () => {
             <span>Alert</span>
           </button>
         </div>
-        <div></div>
+        <div>
+          {isAuth ? (
+            <div>
+              <img
+                style={{ borderRadius: "50%" }}
+                src={url}
+                alt="img"
+                width="100%"
+              />
+            </div>
+          ) : (
+            <Link to="/login"  className={styles.navbar_signin}>
+              {" "}
+              <button>Sign in</button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
