@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { AiFillLock } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
+import { Label } from "semantic-ui-react";
 
 const RentalsContainer = (props) => {
   const {
@@ -141,14 +142,21 @@ const RentalsContainer = (props) => {
         </div>
         {/* price containet */}
         <div>
-          <div style={{ display: "flex", width: "250px", margin: "10px" }}>
-            <input type="date" onChange={handleStart} value={start} />
-            <input type="date" onChange={handleEnd} value={end} />
+          <div style={{ display: "flex", width: "250px", margin: "10px" }} className={styles.calender}>
+            <label>
+              Check in
+              <input type="date" onChange={handleStart} value={start} />
+            </label>
+            <label>
+              Check out
+              <input type="date" onChange={handleEnd} value={end} />
+            </label>
           </div>
           {pricebtn ? (
             <p className={styles.price_cont}>
               {" "}
-              <span className={styles.pln}>PLN &nbsp;{price} </span> per night <br />
+              <span className={styles.pln}>PLN &nbsp;{price} </span> per night{" "}
+              <br />
               PLN {price * days} per {days} &nbsp;nights
             </p>
           ) : (
