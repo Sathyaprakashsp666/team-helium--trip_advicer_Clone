@@ -7,6 +7,34 @@ import ReactPaginate from "react-paginate";
 import "./hotel.css";
 
 const HotelSearch = () => {
+    const [sortByCost, setSortByCost] = useState(null);
+
+    const handleChange = (e) => {
+      setSortByCost(e.target.value);
+    }
+    console.log(sortByCost)
+  
+    const sortCondition = (a, b) => {
+      if (sortByCost == null) {
+        return null;
+      }
+      if (sortByCost === "lowtohigh") {
+        return a.price - b.price;
+      }
+      if (sortByCost === "hightolow") {
+        return b.price - a.price;
+      }
+      if (sortByCost === "rating") {
+        return a.reviews - b.reviews;
+      }
+    };
+
+  
+
+
+
+
+
     const [hotelData, setHotelData] = useState([]);
     console.log(hotelData);
     const [page, setPage] = useState(0);
@@ -14,8 +42,9 @@ const HotelSearch = () => {
     const infoperPage = 15;
     const pagevisited = page * infoperPage;
 
-    const displayHotel = hotelData.slice(pagevisited, pagevisited + infoperPage).map(item => {
+    const displayHotel =hotelData && hotelData?.sort(sortCondition).slice(pagevisited, pagevisited + infoperPage).map(item => {
         return (
+
             <>
                 <div className="show-hotel-main-div">
                     <div className="hotel_thumbnail">
@@ -59,9 +88,27 @@ const HotelSearch = () => {
     return (
         <div>
             <Header />
-            <LeftSide />
+            <LeftSide hotelData={hotelData} />
 
-            <SortingDiv hoteldata={hotelData} />
+            <div className="sorting-div">
+        <p>
+          <span>{hotelData.length} properties</span> in Pune
+        </p>
+        <div className="sorting-options">
+          sort by:
+          <select
+                name="rental"
+                id="rental"
+                form="rentalform"
+                onChange={handleChange}
+              >
+                <option value="tripsort">Triadvicer Sort</option>
+                <option value="lowtohigh">Price: Low to High</option>
+                <option value="hightolow">Price: High to Low</option>
+                <option value="rating">Traveller Rating</option>
+              </select>
+        </div>
+      </div>
 
             {displayHotel}
             <div>
