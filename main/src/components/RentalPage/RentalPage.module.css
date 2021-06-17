@@ -116,10 +116,21 @@
 }
 .more_info {
   color: #575757;
+  border: none;
 }
 .rental_length {
   font-size: 16px;
   color: black;
   font-weight: 600;
   margin-left: 100px;
+}
+.more_info_cont{
+  padding-left: 50px;
+}
+.calender input{
+  width: 80px;
+}
+.calender {
+  color: #474747;
+  font-size: 13px;
 }

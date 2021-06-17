@@ -106,3 +106,13 @@
 .link:hover {
   color: #ffffff;
 }
+.link_top{
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: 600;
+}
+.link_top:hover{
+  color: #3a3a3a;
+  background-color: #ffffff;
+}
