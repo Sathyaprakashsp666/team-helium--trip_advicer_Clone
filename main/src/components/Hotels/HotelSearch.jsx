@@ -6,6 +6,7 @@ import ReactPaginate from "react-paginate";
 import "./hotel.css";
 import FaqHotel from "./FaqHotel";
 import BottomInfo from "./BottomInfo";
+import HotelFooter from "./HotelFooter";
 
 const HotelSearch = () => {
   const [sortByCost, setSortByCost] = useState(null);
@@ -57,7 +58,7 @@ const HotelSearch = () => {
                   <img src={item.Thumbnail} alt="partner_logo"></img>
 
                   <h2>₹{item.price}</h2>
-                  <button>View deal</button>
+                  <button className="view-deal-btn">View deal</button>
                 </div>
                 <div></div>
                 <div className="facility-div">
@@ -84,49 +85,50 @@ const HotelSearch = () => {
     handleHotelSearch();
   }, []);
   return (
-      <>
-    <div>
-      <Header />
-      <LeftSide hotelData={hotelData} />
-
-      <div className="sorting-div">
-        <p>
-          <span>{hotelData.length} properties</span> in Pune
-        </p>
-        <div className="sorting-options">
-          sort by:
-          <select
-            name="rental"
-            id="rental"
-            form="rentalform"
-            onChange={handleChange}
-          >
-            <option value="tripsort">Triadvicer Sort</option>
-            <option value="lowtohigh">Price: Low to High</option>
-            <option value="hightolow">Price: High to Low</option>
-            <option value="rating">Traveller Rating</option>
-          </select>
-        </div>
-      </div>
-
-      {displayHotel}
+    <>
       <div>
-        <ReactPaginate
-          previousLabel={"Previous"}
-          nextLabel={"Next"}
-          pageCount={pageCount}
-          onPageChange={changePage}
-          containerClassName={"paginationButtons"}
-          previousLinkClassName={"previousnBtn"}
-          nextLinkClassName={"nextBtn"}
-          disabledClassName={"paginationDisabled"}
-          activeClassName={"activePagination"}
-        />
+        <Header />
+        <LeftSide hotelData={hotelData} />
+
+        <div className="sorting-div">
+          <p>
+            <span>{hotelData.length} properties</span> in Pune
+          </p>
+          <div className="sorting-options">
+            sort by:
+            <select
+              name="rental"
+              id="rental"
+              form="rentalform"
+              onChange={handleChange}
+            >
+              <option value="tripsort">Triadvicer Sort</option>
+              <option value="lowtohigh">Price: Low to High</option>
+              <option value="hightolow">Price: High to Low</option>
+              <option value="rating">Traveller Rating</option>
+            </select>
+          </div>
+        </div>
+
+        {displayHotel}
+        <div>
+          <ReactPaginate
+            previousLabel={"Previous"}
+            nextLabel={"Next"}
+            pageCount={pageCount}
+            onPageChange={changePage}
+            containerClassName={"paginationButtons"}
+            previousLinkClassName={"previousnBtn"}
+            nextLinkClassName={"nextBtn"}
+            disabledClassName={"paginationDisabled"}
+            activeClassName={"activePagination"}
+          />
+        </div>
+        <FaqHotel />
+        <BottomInfo />
+        <HotelFooter />
       </div>
-      <FaqHotel />
-      <BottomInfo/>
-    </div>
-    {/* <Footer /> */}
+      {/* <Footer /> */}
     </>
   );
 };
