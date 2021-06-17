@@ -5,6 +5,7 @@ import RentalsContainer from "./RentalContainer";
 import axios from "axios";
 import LeftContainer from "./LeftContainer";
 import RentalNavbar from "./RentalNavbar";
+import {Links} from "./Links"
 
 const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
@@ -21,7 +22,7 @@ const RentalPage = () => {
     axios
       .get("https://json-mock-server-trip-advicer.herokuapp.com/rentals")
       .then((res) => {
-        // console.log(res.data);
+        console.log(res.data);
         setRentalData(res.data);
         setIsLoading(false);
       })
@@ -55,6 +56,7 @@ const RentalPage = () => {
   return (
     <div>
       <RentalNavbar />
+      <Links/>
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
 
       <div className={styles.rentalas_top_cont}>
