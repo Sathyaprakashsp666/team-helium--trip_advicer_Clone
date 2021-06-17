@@ -4,6 +4,7 @@ import {PopularThings} from './PopularThings';
 import {WaysToTourDhubai} from './waystotour'
 import {Cultural} from './culturalandtheme'
 import {TopAttractions} from './TopAttractions'
+import {DayTrips1} from './DayTrips' 
 function AbhuDhabi(){
     return (
         <div>
@@ -11,6 +12,7 @@ function AbhuDhabi(){
            <WaysToTourDhubai/>
            <Cultural/>
            <TopAttractions/>
+           <DayTrips1/>
         </div>
     )
 }
