@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { AiFillLock } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
+import { FcCheckmark } from "react-icons/fc";
 import { Label } from "semantic-ui-react";
 
 const RentalsContainer = (props) => {
@@ -18,7 +19,13 @@ const RentalsContainer = (props) => {
     imgs,
     price,
     about,
+    user_reviews,
+    stove,
+    Grill,
+    Dining_Seats,
+    Double_Beds
   } = props;
+  const { user_title, user_review } = user_reviews;
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
   const [index, setIndex] = useState(0);
@@ -88,7 +95,7 @@ const RentalsContainer = (props) => {
         </button>
 
         <div>
-          <img src={imgs[index]} alt="" height="100%" width="100%" />
+          <img src={imgs[index]} alt="" height="100%" width="115%" />
         </div>
 
         <button className={styles.prevnext_btn} onClick={next}>
@@ -147,7 +154,10 @@ const RentalsContainer = (props) => {
         </div>
         {/* price containet */}
         <div>
-          <div style={{ display: "flex", width: "250px", margin: "10px" }} className={styles.calender}>
+          <div
+            style={{ display: "flex", width: "250px", margin: "10px" }}
+            className={styles.calender}
+          >
             <label>
               Check in
               <input type="date" onChange={handleStart} value={start} />
@@ -178,8 +188,27 @@ const RentalsContainer = (props) => {
       </div>
       {showMoreInfo ? (
         <div className={styles.more_info_cont}>
-          <h5>About This Property</h5>
-          <p>{about}</p>
+          <div>
+            <p className={styles.more_info_review}>Most recent reviews</p>
+            <img src='https://image.flaticon.com/icons/png/512/991/991986.png' alt='' width="50px"/>
+            <h6 className={styles.more_info_title}>{user_reviews[0].user_title}</h6>
+            <p className={styles.more_info_para}>{user_reviews[0].user_review}</p>
+            <h6 className={styles.more_info_title}>{user_reviews[1].user_title}</h6>
+            <img src='https://image.flaticon.com/icons/png/512/991/991986.png' alt='' width="50px"/>
+            <p className={styles.more_info_para}>{user_reviews[1].user_review}</p>
+          </div>
+          <div>
+            <h5 className={styles.more_info_review}> About This Property</h5>
+            <p className={styles.more_info_about}>{about}</p>
+            <h5 className={styles.more_info_review}>Amenities</h5>
+            <li>Pets Allowed :</li>
+            <li>Kid Friendly:</li>
+            <li>Smoking Allowed</li>
+            <li>{Dining_Seats ? <FcCheckmark/> : ''} Dining Seats (3)</li>
+            <li> {Double_Beds ? <FcCheckmark/> : ''}Double Beds:(2)</li>
+            <li> {stove ? <FcCheckmark/> : ''}Stove</li>
+            <li>{Grill ? <FcCheckmark/> : ''} Grill</li>
+          </div>
         </div>
       ) : (
         ""

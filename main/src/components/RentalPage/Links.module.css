@@ -1,0 +1,27 @@
+.links__cont {
+    width: 100%;
+    height: 42px;
+    margin: auto;
+    border: 1px solid lightgrey;
+    display: flex;
+    gap: 30px;
+    padding-left: 100px;
+    align-items: center;
+
+}
+.links__cont div {
+    min-width: 0%;
+    /* border: 1px solid red; */
+
+}
+.links__cont a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #545454;
+}
+/* .links__cont div a:hover{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+} */
+

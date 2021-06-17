@@ -47,6 +47,11 @@
 }
 .head_title {
   text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 .top_calender {
   display: flex;
@@ -124,13 +129,43 @@
   font-weight: 600;
   margin-left: 100px;
 }
-.more_info_cont{
-  padding-left: 50px;
+.more_info_cont {
+  padding-left: 40px;
+  display: flex;
+  /* border: 1px solid cyan; */
 }
-.calender input{
+.calender input {
   width: 80px;
 }
 .calender {
   color: #474747;
   font-size: 13px;
+}
+/* .more_info_cont :nth-child(1) {
+  width: 40%;
+  border: 1px solid salmon;
+} */
+.more_info_cont div {
+  width: 48%;
+  margin: 2%;
+  /* background-color: #ffffff; */
+}
+.more_info_review {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+.more_info_title {
+  font-size: 18px;
+  color: #474747;
+}
+.more_info_para {
+  font-size: 16px;
+  line-height: 16px;
+  color: #474747;
+}
+.more_info_about {
+  font-size: 16px;
+  line-height: 20px;
+  color: #474747;
 }
