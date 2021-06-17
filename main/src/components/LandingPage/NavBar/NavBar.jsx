@@ -32,7 +32,7 @@ function NavBar() {
             />{" "}
           </Link>
           <div style={{ marginLeft: "540px" }}>
-            <Link to="/edit" className={styles.link}>
+            <Link to="/edit" className={styles.link_top}>
               <NavSub
                 text={"Review"}
                 src="https://static.thenounproject.com/png/1416596-200.png"
@@ -40,7 +40,7 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link className={styles.link} to="/trips">
+            <Link className={styles.link_top} to="/trips">
               <NavSub
                 text="Trips"
                 src="https://cdn0.iconfinder.com/data/icons/feather/96/heart-512.png"
@@ -48,7 +48,7 @@ function NavBar() {
             </Link>
           </div>
           <div>
-            <Link className={styles.link} to="/alerts">
+            <Link className={styles.link_top} to="/alerts">
               <NavSub
                 text="Alerts"
                 src="https://cdn4.iconfinder.com/data/icons/hodgepodge-free/32/bell_ring_notification_alarm-512.png"
@@ -63,7 +63,7 @@ function NavBar() {
                     style={{ borderRadius: "50%" }}
                     src={url}
                     alt=""
-                    width="100%"
+                    width="50%"
                   />
                 </div>
               ) : (
