@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const LeftSide = () => {
+const LeftSide = ({hotelData}) => {
+  console.log(hotelData.length)
   const [rangeVlaue, setRnageValue] = useState(0);
   const handleOnRnageChange = (e) => {
     setRnageValue(e.target.value)
