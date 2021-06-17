@@ -7,7 +7,6 @@ import {AbhuDhabi} from '../components/LandingPage/ThingsTodo/AbhuDhabi'
 
 
 import HotelSearch from "../components/Hotels/HotelSearch";
-import { AbhuDhabi } from "../components/LandingPage/ThingsTodo/AbhuDhabi";
 
 const AllRoutes = () => {
   return (

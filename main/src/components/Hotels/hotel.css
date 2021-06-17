@@ -56,6 +56,11 @@
   font-size: 15px;
   font-weight: 600;
 }
+.view-deal-btn:hover{
+  background: #f0c758;
+  border-color: #f5cc5e;
+  color: rgb(49, 48, 48);
+}
 .partner-logo-div>h2{
   padding-left: 30%;
 }
