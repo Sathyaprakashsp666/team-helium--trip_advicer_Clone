@@ -5,7 +5,8 @@ import RentalsContainer from "./RentalContainer";
 import axios from "axios";
 import LeftContainer from "./LeftContainer";
 import RentalNavbar from "./RentalNavbar";
-import {Links} from "./Links"
+import { Links } from "./Links";
+import HotelFooter from "./RentalFooter";
 
 const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
@@ -56,9 +57,8 @@ const RentalPage = () => {
   return (
     <div>
       <RentalNavbar />
-      <Links/>
+      <Links />
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
-
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
@@ -105,8 +105,11 @@ const RentalPage = () => {
                 </>
               );
             })}
+           
         </div>
       </div>
+      <br /> <br /> <br />
+      <HotelFooter />
     </div>
   );
 };
