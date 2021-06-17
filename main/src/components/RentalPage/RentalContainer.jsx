@@ -164,7 +164,7 @@ const RentalsContainer = (props) => {
         </div>
       </div>
       {showMoreInfo ? (
-        <div>
+        <div className={styles.more_info_cont}>
           <h5>About This Property</h5>
           <p>{about}</p>
         </div>

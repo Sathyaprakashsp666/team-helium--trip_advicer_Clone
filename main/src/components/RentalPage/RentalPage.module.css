@@ -116,10 +116,14 @@
 }
 .more_info {
   color: #575757;
+  border: none;
 }
 .rental_length {
   font-size: 16px;
   color: black;
   font-weight: 600;
   margin-left: 100px;
+}
+.more_info_cont{
+  padding-left: 50px;
 }
