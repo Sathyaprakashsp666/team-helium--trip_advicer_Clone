@@ -127,3 +127,10 @@
 .more_info_cont{
   padding-left: 50px;
 }
+.calender input{
+  width: 80px;
+}
+.calender {
+  color: #474747;
+  font-size: 13px;
+}

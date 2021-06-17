@@ -72,7 +72,7 @@ const RentalNavbar = () => {
               />
             </div>
           ) : (
-            <Link to="/login">
+            <Link to="/login"  className={styles.navbar_signin}>
               {" "}
               <button>Sign in</button>
             </Link>
