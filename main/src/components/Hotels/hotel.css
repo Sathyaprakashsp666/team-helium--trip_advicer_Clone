@@ -106,7 +106,7 @@
 
 .left-sidebar-div{
     width: 20%;
-    height: 900px;
+    height: 1230px;
     border: 1px solid black;
     margin-left: 70px;
     margin-top: 50px;
@@ -440,3 +440,44 @@ hr{
   
 }
 
+
+
+/* header */
+
+.header-main-div{
+  width: 100%;
+  height: 250px;
+  border-bottom: 2px solid rgb(148, 146, 146);
+}
+
+.header-map-div{
+  width: 20%;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 5.5%;
+  float: left;
+}
+.header-map-div>img{
+  width: 100%;
+  height: 150px;
+}
+.header-city-text{
+  width: 60%;
+  height: 150px;
+  margin-top: 50px;
+  float: left;
+  margin-left: 2%;
+}
+.city-name-div{
+  width: 100%;
+  height: 50px;
+  
+}
+.checkin-checkout{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.checkin{
+  border-radius: 10px;
+}

@@ -48,35 +48,82 @@ const LeftSide = ({ hotelData }) => {
       <div className="left-Popular-section">
         <h4>Popular</h4>
         <input type="checkbox" />
-        <span className="checkbox-input">Air conditioning 180</span>
+        <span className="checkbox-input">Air conditioning</span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">Romantic 15</span>
+        <span className="checkbox-input">Romantic</span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">5 stars 11</span>
+        <span className="checkbox-input">5 stars</span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">4 stars & up 108</span>
+        <span className="checkbox-input">4 stars & up </span>
         <br />
       </div>
       <hr />
       <div className="left-Popular-section">
         <h4>Amenities</h4>
         <input type="checkbox" />
-        <span className="checkbox-input">Free Wifi 173</span>
+        <span className="checkbox-input">Free Wifi </span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">Breakfast included 161</span>
+        <span className="checkbox-input">Breakfast included </span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">Pool 42</span>
+        <span className="checkbox-input">Pool </span>
         <br />
         <input type="checkbox" />
-        <span className="checkbox-input">Free parking 177</span>
+        <span className="checkbox-input">Free parking</span>
         <br />
       </div>
       <hr />
+      <div className="left-Popular-section">
+        <h4>Hotel class</h4>
+        <input type="checkbox" />
+        <span className="checkbox-input">5 stars </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">4 stars </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">3 stars </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">2 stars</span>
+        <br />
+      </div>
+      <hr />
+      <div className="left-Popular-section">
+        <h4>Styles</h4>
+        <input type="checkbox" />
+        <span className="checkbox-input">Budget </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">Mid-range </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">Luxury </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">Family-friendly</span>
+        <br />
+      </div>
+      <hr />
+      <div className="left-Popular-section">
+        <h4>Brands</h4>
+        <input type="checkbox" />
+        <span className="checkbox-input">OYO </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">FabHotels </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">Treebo </span>
+        <br />
+        <input type="checkbox" />
+        <span className="checkbox-input">Hyatt</span>
+        <br />
+      </div>
     </div>
   );
 };
