@@ -23,7 +23,7 @@ const RentalsContainer = (props) => {
     stove,
     Grill,
     Dining_Seats,
-    Double_Beds
+    Double_Beds,
   } = props;
   const { user_title, user_review } = user_reviews;
   const [start, setStart] = useState("");
@@ -190,12 +190,28 @@ const RentalsContainer = (props) => {
         <div className={styles.more_info_cont}>
           <div>
             <p className={styles.more_info_review}>Most recent reviews</p>
-            <img src='https://image.flaticon.com/icons/png/512/991/991986.png' alt='' width="50px"/>
-            <h6 className={styles.more_info_title}>{user_reviews[0].user_title}</h6>
-            <p className={styles.more_info_para}>{user_reviews[0].user_review}</p>
-            <h6 className={styles.more_info_title}>{user_reviews[1].user_title}</h6>
-            <img src='https://image.flaticon.com/icons/png/512/991/991986.png' alt='' width="50px"/>
-            <p className={styles.more_info_para}>{user_reviews[1].user_review}</p>
+            <img
+              src="https://image.flaticon.com/icons/png/512/991/991986.png"
+              alt=""
+              width="50px"
+            />
+            <h6 className={styles.more_info_title}>
+              {user_reviews[0].user_title}
+            </h6>
+            <p className={styles.more_info_para}>
+              {user_reviews[0].user_review}
+            </p>
+            <h6 className={styles.more_info_title}>
+              {user_reviews[1].user_title}
+            </h6>
+            <img
+              src="https://image.flaticon.com/icons/png/512/991/991986.png"
+              alt=""
+              width="50px"
+            />
+            <p className={styles.more_info_para}>
+              {user_reviews[1].user_review}
+            </p>
           </div>
           <div>
             <h5 className={styles.more_info_review}> About This Property</h5>
@@ -204,10 +220,10 @@ const RentalsContainer = (props) => {
             <li>Pets Allowed :</li>
             <li>Kid Friendly:</li>
             <li>Smoking Allowed</li>
-            <li>{Dining_Seats ? <FcCheckmark/> : ''} Dining Seats (3)</li>
-            <li> {Double_Beds ? <FcCheckmark/> : ''}Double Beds:(2)</li>
-            <li> {stove ? <FcCheckmark/> : ''}Stove</li>
-            <li>{Grill ? <FcCheckmark/> : ''} Grill</li>
+            <li>{Dining_Seats ? <FcCheckmark /> : ""} Dining Seats (3)</li>
+            <li> {Double_Beds ? <FcCheckmark /> : ""}Double Beds:(2)</li>
+            <li> {stove ? <FcCheckmark /> : ""}Stove</li>
+            <li>{Grill ? <FcCheckmark /> : ""} Grill</li>
           </div>
         </div>
       ) : (
