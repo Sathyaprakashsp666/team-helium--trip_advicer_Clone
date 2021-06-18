@@ -49,13 +49,14 @@ const PopularThings = ({ deviceType }) => {
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
+                itemClass="carousel-item-padding-10-px"
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "60%", height: "100%" }}
+                        style={{ width: "40%", height: "50%" }}
                         src={image[0]}
                     />
                     <h3>{image[1]}</h3>
