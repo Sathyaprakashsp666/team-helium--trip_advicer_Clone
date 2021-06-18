@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { AiFillLock } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
+import { Label } from "semantic-ui-react";
 
 const RentalsContainer = (props) => {
   const {
@@ -23,16 +24,30 @@ const RentalsContainer = (props) => {
   const [index, setIndex] = useState(0);
   const [pricebtn, setPricebtn] = useState(false);
   const [showMoreInfo, setShowMoreInfo] = useState(false);
+  const [days, setDays] = useState(1);
 
   const handleStart = (e) => {
+    // const date = new Date().getDate()
     setStart(e.target.value);
   };
   const handleEnd = (e) => {
     setEnd(e.target.value);
   };
+
   const submitData = () => {
-    console.log(end - start);
     setPricebtn(true);
+    // console.log(`'start is' ${start}`);
+    // console.log(`'end is' ${end}`);
+
+    //to get days from start and end date
+    var startDate = Date.parse(start);
+    var endDate = Date.parse(end);
+    var timeDiff = endDate - startDate;
+    let daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    // console.log(daysDiff);
+    setDays(daysDiff);
+    setStart("");
+    setEnd("");
   };
 
   //image slider
@@ -127,14 +142,22 @@ const RentalsContainer = (props) => {
         </div>
         {/* price containet */}
         <div>
-          <div style={{ display: "flex", width: "250px", margin: "10px" }}>
-            <input type="date" onChange={handleStart} />
-            <input type="date" onChange={handleEnd} />
+          <div style={{ display: "flex", width: "250px", margin: "10px" }} className={styles.calender}>
+            <label>
+              Check in
+              <input type="date" onChange={handleStart} value={start} />
+            </label>
+            <label>
+              Check out
+              <input type="date" onChange={handleEnd} value={end} />
+            </label>
           </div>
           {pricebtn ? (
             <p className={styles.price_cont}>
               {" "}
-              <span className={styles.pln}>PLN</span> {price} per night
+              <span className={styles.pln}>PLN &nbsp;{price} </span> per night{" "}
+              <br />
+              PLN {price * days} per {days} &nbsp;nights
             </p>
           ) : (
             ""
@@ -149,7 +172,7 @@ const RentalsContainer = (props) => {
         </div>
       </div>
       {showMoreInfo ? (
-        <div>
+        <div className={styles.more_info_cont}>
           <h5>About This Property</h5>
           <p>{about}</p>
         </div>

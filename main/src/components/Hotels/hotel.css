@@ -1,12 +1,17 @@
 .show-hotel-main-div {
   width: 72%;
   height: 280px;
-  border: 1px solid black;
+  /* border: 1px solid rgb(122, 120, 120); */
   /* margin-bottom: 30px; */
   float: right;
   margin-top: 30px;
   margin-right: 30px;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
+.show-hotel-main-div:hover{
+  box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .hotel_thumbnail {
   width: 30%;
   height: 100%;
@@ -89,4 +94,250 @@
   margin-left: 20px;
   margin-top: 10px;
   outline: none;
+}
+
+/* left side bar */
+
+
+.left-sidebar-div{
+    width: 20%;
+    height: 900px;
+    border: 1px solid black;
+    margin-left: 70px;
+    margin-top: 50px;
+    float: left;
+}
+
+.left-head-section{
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.checkbox-input{
+  font-weight: 500;
+  padding-left: 10px;
+}
+hr{
+  width: 70%;
+  margin: auto;
+}
+.left-deal-section{
+  width: 100%;
+  height: 120px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.left-price-slide-div{
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.input-range{
+  width: 90%;
+}
+
+.left-Popular-section{
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+
+
+
+/* paginations */
+
+.paginationButtons{
+  width: 72%;
+  height: 40px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  list-style: none;
+  display: flex;
+  
+
+}
+.paginationButtons a {
+  float: left;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  height: 40px;
+  padding-top: 5px;
+  height: 40px;
+  
+  
+}
+/* .activePagination{
+  color: black;
+  background: grey;
+  text-align: center;
+} */
+
+.previousnBtn{
+  width: 120px;
+  font-size: 20px;
+  margin-right: 300px;
+  color: rgb(160, 158, 158);
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid rgb(160, 158, 158);
+}
+.previousnBtn:hover{
+  color: rgb(160, 158, 158);
+}
+.nextBtn{
+  margin-left: 310px;
+  width: 95px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.nextBtn:hover{
+  background: black;
+  color: white;
+}
+
+
+
+/* frequesntly asked questions */
+
+.fqa-main-div{
+  width: 72%;
+  border: 1px solid black;
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.faq-title{
+  font-weight: 500;
+}
+.faq-questions{
+  font-weight: 700;
+}
+.faq-question-link{
+  text-decoration: none;
+}
+.faq-question-link:hover{
+  text-decoration: underline;
+}
+
+.bottom-info-div{
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid rgb(141, 137, 137);
+  float: left;
+  margin-top: 50px;
+  background: whitesmoke;
+
+}
+
+.bottom-div-information{
+  width: 23%;
+  height: 180px;
+  border: 1px;
+  margin-top: 60px;
+  margin-left: 100px;
+  text-align: center;
+  float: left;
+}
+.bottom-div-information>img{
+  width: 50px;
+  height: 50px;
+}
+
+.bottom-info-div-text{
+  font-size: 23px;
+  padding-top: 30px;
+  font-weight: 400;
+}
+
+.link-information{
+  text-decoration: none;
+}
+.link-information:hover{
+  text-decoration: underline;
+}
+.bottom-div-grid-images{
+  width: 62%;
+  height: 180px;
+  border: 1px;
+  margin-top: 60px;
+  margin-left: 80px;
+  float: left;
+  display: grid;
+  grid-template: "div div div div";
+  gap: 30px;
+}
+
+.bottom-div-grid-images-1{
+  background: url("https://media-cdn.tripadvisor.com/media/vr-splice-l/06/1c/8c/8c.jpg");
+  background-repeat: no-repeat;
+  background-size: 220px 140px;
+  float: left;
+}
+.bottom-div-grid-images-2{
+  background: url("https://media-cdn.tripadvisor.com/media/vr-splice-l/06/1c/8c/8b.jpg");
+  background-repeat: no-repeat;
+  background-size: 220px 140px;
+  float: left;
+}
+.bottom-div-grid-images-3{
+  background: url("https://media-cdn.tripadvisor.com/media/vr-splice-l/0b/84/4c/73.jpg");
+  background-repeat: no-repeat;
+  background-size: 220px 140px;
+  float: left;
+}
+.bottom-div-grid-images-4{
+  background: url("https://media-cdn.tripadvisor.com/media/vr-splice-l/06/05/fd/73.jpg");
+  background-repeat: no-repeat;
+  background-size: 220px 140px;
+  float: left;
+}
+
+.link-div-info{
+  width: 100%;
+  height: 40px;
+  background: white;
+  margin-top: 140px;
+  font-size: 14px;
+  
+}
+.link-div-text{
+  float: left;
+  padding-left: 40px;
+  text-decoration: none;
+  color: black;
+}
+.link-div-text:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.grid-div-price{
+  float: left;
+  margin-top: 100px;
+  padding-left: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.grid-div-text{
+  font-size: small;
+  color: whitesmoke;
+  font-weight: normal;
 }

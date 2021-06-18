@@ -1,4 +1,4 @@
-.footer_cont_top{
+.footer_cont_top {
   margin: auto;
   width: 1330px;
   min-height: 250px;
@@ -88,12 +88,16 @@
   font-weight: 700;
 }
 
-
-.image_slider img{
+.image_slider img {
   opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.image_slider img:hover{
+.image_slider img:hover {
   opacity: 5;
+}
+
+.arrow {
+  background-color: white;
+  border: none;
 }
