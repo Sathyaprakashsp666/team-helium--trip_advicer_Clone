@@ -28,7 +28,7 @@ const PopularThings = ({ deviceType }) => {
 
     function getData(){
         // This is placed inside 
-        axios.get("http://localhost:3000/popular_things_todo")
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/popular_things_todo")
         .then(res => {
             const value = res.data
             console.log(value);

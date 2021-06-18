@@ -11,7 +11,7 @@ function TopAttrComp(props){
     let images = []
     function getData(){
         // This is placed inside 
-        axios.get(`http://localhost:3000/${props.value}`)
+        axios.get(`https://json-mock-server-trip-advicer.herokuapp.com/${props.value}`)
         .then(res => {
             const value = res.data
             console.log(value);
