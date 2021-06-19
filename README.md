@@ -36,16 +36,6 @@ npm start
 ####  styled-components v5.3.0
 ***
 
-### npm i @emotion/styled
-***
-### npm i @emotion/react
-***
-### npm install date-fns
-***
-### npm install @material-ui/lab@next
-***
-### npm install @material-ui/core@next
-***
 
 ## Hosted Platform 
 
