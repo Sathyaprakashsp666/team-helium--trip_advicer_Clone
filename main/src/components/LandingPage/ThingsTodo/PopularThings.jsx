@@ -53,8 +53,6 @@ const PopularThings = ({ deviceType }) => {
                 // centerMode={true} 
                 itemClass={styles.padd}
                 containerClass = {styles.container}
-                slidesToSlide={4}
-                itemClass="carousel-item-padding-10-px"
                 >
                 {images.slice(0, 11).map(image => {
                     return (
@@ -62,7 +60,6 @@ const PopularThings = ({ deviceType }) => {
                     <Image
                         draggable={false}
                         style={{ width: "70%", height: "100%" }}
-                        style={{ width: "40%", height: "50%" }}
                         src={image[0]}
                     />
                     <h3 style={{color: "white",marginTop:"-50px",marginLeft:"10px",fontWeight:700}}>{image[1]}</h3>
