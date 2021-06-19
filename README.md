@@ -39,7 +39,7 @@ npm start
 
 ## Hosted Platform 
 
-vercel: 
+vercel: https://trip-advicer-clone-team-helium.netlify.app/
 
 ## Technologies Used
 
