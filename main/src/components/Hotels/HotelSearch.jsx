@@ -7,6 +7,8 @@ import "./hotel.css";
 import FaqHotel from "./FaqHotel";
 import BottomInfo from "./BottomInfo";
 import HotelFooter from "./HotelFooter";
+import { Links } from "../RentalPage/Links";
+import RentalNavbar from "../RentalPage/RentalNavbar";
 
 const HotelSearch = () => {
   const [sortByCost, setSortByCost] = useState(null);
@@ -57,7 +59,7 @@ const HotelSearch = () => {
                 <div className="partner-logo-div">
                   <img src={item.Thumbnail} alt="partner_logo"></img>
 
-                  <h2>₹{item.price}</h2>
+                  <h2>₹ {item.price}</h2>
                   <button className="view-deal-btn">View deal</button>
                 </div>
                 <div></div>
@@ -87,6 +89,8 @@ const HotelSearch = () => {
   return (
     <>
       <div>
+        <RentalNavbar />
+        <Links />
         <Header />
         <LeftSide hotelData={hotelData} />
 
@@ -128,7 +132,6 @@ const HotelSearch = () => {
         <BottomInfo />
         <HotelFooter />
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
