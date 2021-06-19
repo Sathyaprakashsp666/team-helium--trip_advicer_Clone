@@ -29,7 +29,7 @@ const Cultural = ({ deviceType }) => {
 
     function getData(){
         // This is placed inside 
-        axios.get("http://localhost:3000/cultural_and_theme_tours")
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/cultural_and_theme_tours")
         .then(res => {
             const value = res.data
             console.log(value);

@@ -1,3 +1,4 @@
+
 # Tripadvicer- Website Clone - Team Helium
 
 Tripadvisor, Inc. is an American online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. It also offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
@@ -42,3 +43,6 @@ vercel:
 ## Technologies Used
 
 ![alt text](https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/146285586/original/51dc9c414e412a2b325d4a0457b202b5f63e04dd/do-any-html-css-sass-bootstrap-javascript-reactjs-work.jpg "Logo Title Text 1")
+
+
+
