@@ -1,0 +1,603 @@
+// /*https://json-mock-server-trip-advicer.herokuapp.com/rentals*/
+[
+  {
+    "id": 1,
+    "title": "Verdant Vagamoon Cottage",
+    "reviews": 10,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/07/bb/da/65.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/8c/7d/7b.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/05/ca/08/4b.jpg"
+    ],
+    "price": 65,
+    "about": "This is our home amidst our cardamom estate. We use it sparsely as we are from the city. The house also includes a kitchen with utensils and an induction cook top. The place is easily accessible from all directions, the last 800mtrs to the hose is a jeep road.",
+    "user_reviews": [
+      {
+        "user_title": "Pleasant stay",
+        "user_review": "We had a very pleasant stay and enjoyed well the ambiance and surrounding ,the view from the house was fabulous and had a good time under the hospitality of the caretaker"
+      },
+      {
+        "user_title": "Excellent stay!",
+        "user_review": "Had one of the finest stays! Must give a try u ll neva regret. Easily Accessible place. Care taker was very helpful. Very well maintained. Sufficient for a people of 6."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Verdant Vagammon Farm House",
+    "reviews": 17,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/07/bb/da/71.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/01/6e/e5/f4.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/02/19/ca/8b.jpg"
+    ],
+    "price": 665,
+    "about": "IT IS HEAVEN'S NEST CRADLED BY ROLLING HILLS AND MEADOWS ABOUT 200 MTRS AWAY FROM THE MAIN JUNCTION OF VAGAMON MEADOWS. It is a two bed room villa: GROUND FLOOR: TWO BED ROOMS WITH ATTACHED PRIVATE BATHROOMS, DRAWING, DINING, OPEN KITCHEN WITH UTENSILS, SIT-OUT FIRST FLOOR",
+    "user_reviews": [
+      {
+        "user_title": "Awsome...",
+        "user_review": "This place is just wow. I am writing this after staying for a couple of times. You pay and its your home for the next day. No safety issues. This is the perfect place to spend.."
+      },
+      {
+        "user_title": "My wish is to stay always like this, living quietly in a corner of nature",
+        "user_review": "It's an amazing experience ever.we are stay there in the first time at the verdant farmhouse and it's a really wonderful place where nature at its best. There is no stress..."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Casa Zaka by Vista Rooms",
+    "reviews": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ef.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ee.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ed.jpg"
+    ],
+    "price": 765,
+    "about": "Pine View Homestay is situated in the most beautiful location in Vagamon with a spectacular view of pine forest, waterfall and surrounding mountains. We love to be their as the area is very calm with a breeze throughout and waterfall sound",
+    "user_reviews": [
+      {
+        "user_title": "Best stay ever",
+        "user_review": "a cosy place amidst the tea plantations! It's an amazing pick by Vista Rooms for people travelling in small groups. Vagamon was on our bucket list and finally, in January my.."
+      },
+      {
+        "user_title": "Phenomenal stay!",
+        "user_review": "Casa Zaka in vagamon is quite a gem! The location is sooo dreamy with tea plantations all around. The breath of fresh air will surely rejuvenate you! We came here from Mumbai on..."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Vagammon Clouds - Single Room",
+    "reviews": 3,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/cd/5f.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/ce/5d.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/ce/5e.jpg"
+    ],
+    "price": 865,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "My stay at Vagamon Clouds",
+        "user_review": "I was planing for a stress free vaccation from the work life and din&stir of city life for a long time, and I wanted it to relaxing and stress free. After googling many resort's..."
+      },
+      {
+        "user_title": "My Stay in Vagamon",
+        "user_review": "My stay at Vagamon Clouds was oustading. Rooms are very neat. All staff were very helpful. Location is very near to Mottakunnu & Pine Forests. It is in a prime location to roam..."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Ave Meadows Vagammon",
+    "reviews": 2,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/04/50/a9/c4.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/04/50/a9/c2.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/df/97/b1.jpg"
+    ],
+    "price": 365,
+    "about": "Mountain Mist Resort Vagamon is a reasonable option for travellers looking out for villa in Vagamon. It is located in Masco Jn. From all the 3 Star hotels in Vagamon, Mountain Mist Resort Vagamon is very much popular among the tourists. A smooth check-in/check-out process, flexible policies",
+    "user_reviews": [
+      {
+        "user_title": "Best in the industry in the location",
+        "user_review": "The quite and calm weather and beautiful nature makes one cherish the experience for life. The Villas location is the best surrounded b nature in its best form, rolling hills,..."
+      },
+      {
+        "user_title": "Great place to stay in harmony with nature",
+        "user_review": "We enjoyed living in the AVE meadows Vagamon Last month. Serene environment, mist,breeze, rolling meadows and the birds made it superb. We relaxed and enjoyed it very much...."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Pine View Home Stay",
+    "reviews": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/8a/2c/48.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/8a/2c/04.jpg",
+      ""
+    ],
+    "price": 665,
+    "about": "Nestled in five acres of private virgin forest on a remote mountain top, the property borders Kurushumala Ashram estate on one side and overlooks the lush green valleys. The serenity here will help relax your mind, body and soul. We have created this haven of peace and tranquillity to resonate",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Mountain Villa - Stone Cottage",
+    "reviews": 1,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/ef/19/bf.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/11/a9/e9.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/11/a6/d3.jpg"
+    ],
+    "price": 965,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      },
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cocoon Valley Hide Out by Vista Rooms",
+    "reviews": "4",
+    "bathrooms": "2",
+    "bedrooms": "2",
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/37.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/35.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/36.jpg"
+    ],
+    "price": 665,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      },
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Vagamoon Clouds - Double Bedroom",
+    "reviews": 1,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/70.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/6e.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/6f.jpg"
+    ],
+    "price": 465,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Vagamoon Court Yard",
+    "reviews": "",
+    "bathrooms": "",
+    "bedrooms": "",
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/5f.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/61.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/64.jpg"
+    ],
+    "price": 765,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Verdant Vagamoon Cottage",
+    "reviews": 12,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/07/bb/da/65.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/8c/7d/7b.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/05/ca/08/4b.jpg"
+    ],
+    "price": 653,
+    "about": "This is our home amidst our cardamom estate. We use it sparsely as we are from the city. The house also includes a kitchen with utensils and an induction cook top. The place is easily accessible from all directions, the last 800mtrs to the hose is a jeep road.",
+    "user_reviews": [
+      {
+        "user_title": "Pleasant stay",
+        "user_review": "We had a very pleasant stay and enjoyed well the ambiance and surrounding ,the view from the house was fabulous and had a good time under the hospitality of the caretaker"
+      },
+      {
+        "user_title": "Excellent stay!",
+        "user_review": "Had one of the finest stays! Must give a try u ll neva regret. Easily Accessible place. Care taker was very helpful. Very well maintained. Sufficient for a people of 6."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": " Vagammon Farm House",
+    "reviews": 27,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/07/bb/da/71.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/01/6e/e5/f4.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/02/19/ca/8b.jpg"
+    ],
+    "price": 765,
+    "about": "IT IS HEAVEN'S NEST CRADLED BY ROLLING HILLS AND MEADOWS ABOUT 200 MTRS AWAY FROM THE MAIN JUNCTION OF VAGAMON MEADOWS. It is a two bed room villa: GROUND FLOOR: TWO BED ROOMS WITH ATTACHED PRIVATE BATHROOMS, DRAWING, DINING, OPEN KITCHEN WITH UTENSILS, SIT-OUT FIRST FLOOR",
+    "user_reviews": [
+      {
+        "user_title": "Awsome...",
+        "user_review": "This place is just wow. I am writing this after staying for a couple of times. You pay and its your home for the next day. No safety issues. This is the perfect place to spend.."
+      },
+      {
+        "user_title": "My wish is to stay always like this, living quietly in a corner of nature",
+        "user_review": "It's an amazing experience ever.we are stay there in the first time at the verdant farmhouse and it's a really wonderful place where nature at its best. There is no stress..."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Casa Zaka by Vista Rooms",
+    "reviews": 3,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ef.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ee.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ff/1e/ed.jpg"
+    ],
+    "price": 1325,
+    "about": "Pine View Homestay is situated in the most beautiful location in Vagamon with a spectacular view of pine forest, waterfall and surrounding mountains. We love to be their as the area is very calm with a breeze throughout and waterfall sound",
+    "user_reviews": [
+      {
+        "user_title": "Best stay ever",
+        "user_review": "a cosy place amidst the tea plantations! It's an amazing pick by Vista Rooms for people travelling in small groups. Vagamon was on our bucket list and finally, in January my.."
+      },
+      {
+        "user_title": "Phenomenal stay!",
+        "user_review": "Casa Zaka in vagamon is quite a gem! The location is sooo dreamy with tea plantations all around. The breath of fresh air will surely rejuvenate you! We came here from Mumbai on..."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": " Clouds - Single Room",
+    "reviews": 33,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/cd/5f.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/ce/5d.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/60/ce/5e.jpg"
+    ],
+    "price": 1865,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "My stay at Vagamon Clouds",
+        "user_review": "I was planing for a stress free vaccation from the work life and din&stir of city life for a long time, and I wanted it to relaxing and stress free. After googling many resort's..."
+      },
+      {
+        "user_title": "My Stay in Vagamon",
+        "user_review": "My stay at Vagamon Clouds was oustading. Rooms are very neat. All staff were very helpful. Location is very near to Mottakunnu & Pine Forests. It is in a prime location to roam..."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Ave Meadows Vagammon",
+    "reviews": 52,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/04/50/a9/c4.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/04/50/a9/c2.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/df/97/b1.jpg"
+    ],
+    "price": 1365,
+    "about": "Mountain Mist Resort Vagamon is a reasonable option for travellers looking out for villa in Vagamon. It is located in Masco Jn. From all the 3 Star hotels in Vagamon, Mountain Mist Resort Vagamon is very much popular among the tourists. A smooth check-in/check-out process, flexible policies",
+    "user_reviews": [
+      {
+        "user_title": "Best in the industry in the location",
+        "user_review": "The quite and calm weather and beautiful nature makes one cherish the experience for life. The Villas location is the best surrounded b nature in its best form, rolling hills,..."
+      },
+      {
+        "user_title": "Great place to stay in harmony with nature",
+        "user_review": "We enjoyed living in the AVE meadows Vagamon Last month. Serene environment, mist,breeze, rolling meadows and the birds made it superb. We relaxed and enjoyed it very much...."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Pine View Home Stay",
+    "reviews": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 6,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/8a/2c/48.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/02/8a/2c/04.jpg",
+      ""
+    ],
+    "price": 1665,
+    "about": "Nestled in five acres of private virgin forest on a remote mountain top, the property borders Kurushumala Ashram estate on one side and overlooks the lush green valleys. The serenity here will help relax your mind, body and soul. We have created this haven of peace and tranquillity to resonate",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Mountain Villa - Stone Cottage",
+    "reviews": 14,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/ef/19/bf.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/11/a9/e9.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/06/11/a6/d3.jpg"
+    ],
+    "price": 1965,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      },
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Cocoon Valley Hide Out by Vista Rooms",
+    "reviews": 44,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/37.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/35.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/55/3a/36.jpg"
+    ],
+    "price": 1665,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      },
+      {
+        "user_title": "Labour of love",
+        "user_review": "We stayed at the newly renovated Planter Cottage. Infact, we were the first to occupy it after its restoration. We were there with out 1 yr old son and we wish we had booked..."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Vagamoon Clouds - Double Bedroom",
+    "reviews": 1,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "sleeps": 4,
+    "match": "sleeps",
+    "stove": true,
+    "Grill": true,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/70.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/6e.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/06/61/8b/6f.jpg"
+    ],
+    "price": 1465,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Vagamoon Court Yard",
+    "reviews": 16,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "sleeps": 3,
+    "match": "sleeps",
+    "stove": false,
+    "Grill": false,
+    "Dining_Seats": true,
+    "Double_Beds": true,
+    "imgs": [
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/5f.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/61.jpg",
+      "https://media-cdn.tripadvisor.com/media/vr-splice-l/05/84/a6/64.jpg"
+    ],
+    "price": 1265,
+    "about": "VagamonClouds Holiday Apartments & Rooms. Single and Double room with attached toilets , Deluxe Double interconnected rooms with attached toilets and Balcony, Executive Double Bed Room Suite. All rooms with mountain views. Your privacy and relaxation with mountains and nature view",
+    "user_reviews": [
+      {
+        "user_title": "Good stay",
+        "user_review": "This is one of the best individual cottage in vagamon with a good location.Me and friends stayed their one week back.The climate was awesome. Some maintenance work is going.."
+      },
+      {
+        "user_title": "MEMORABLE EXPERIENCE",
+        "user_review": "Had a great stay in Pine view homestay.Quality services were offered,the place is calm with an excellent view towards pine forest.Enjoyed the stay."
+      }
+    ]
+  }
+]
