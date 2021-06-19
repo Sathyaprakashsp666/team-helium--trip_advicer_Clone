@@ -28,7 +28,7 @@ const PopularThings = ({ deviceType }) => {
 
     function getData(){
         // This is placed inside 
-        axios.get("http://localhost:3000/popular_things_todo")
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/popular_things_todo")
         .then(res => {
             const value = res.data
             console.log(value);
@@ -49,13 +49,14 @@ const PopularThings = ({ deviceType }) => {
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
+                itemClass="carousel-item-padding-10-px"
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "60%", height: "100%" }}
+                        style={{ width: "40%", height: "50%" }}
                         src={image[0]}
                     />
                     <h3>{image[1]}</h3>

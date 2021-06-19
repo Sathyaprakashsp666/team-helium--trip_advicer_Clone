@@ -1,6 +1,6 @@
 import React from 'react'
-import { TopAttrComp } from './TopAttrComp'
-
+import  Carousel  from './TopAttrComp'
+import {TopAttrComp} from './TopAttrComp'
 
 function TopAttractions(){
 
@@ -8,7 +8,12 @@ function TopAttractions(){
         <div>
             <h2> Top Attractions in Dhubai</h2> 
             <TopAttrComp value={"Top_Attractions"} />
+            <TopAttrComp value={"TopAttr2"} />
+            <TopAttrComp value={"TopAttr3"} />
+
+            {/* <Carousel/> */}
         </div>
     )
 }
 export{TopAttractions}
+

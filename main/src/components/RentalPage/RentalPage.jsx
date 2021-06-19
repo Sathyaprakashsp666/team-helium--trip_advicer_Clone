@@ -43,13 +43,13 @@ const RentalPage = () => {
     if (sortByCost == null) {
       return null;
     }
-    if (sortByCost == "lowtohigh") {
+    if (sortByCost === "lowtohigh") {
       return a.price - b.price;
     }
-    if (sortByCost == "hightolow") {
+    if (sortByCost === "hightolow") {
       return b.price - a.price;
     }
-    if (sortByCost == "rating") {
+    if (sortByCost === "rating") {
       return a.reviews - b.reviews;
     }
   };
