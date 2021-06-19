@@ -3,3 +3,95 @@
     margin-top: -80px;
     font-weight: 900;
 }
+.display{
+    
+}
+.flexcontainer{
+    display: flex;
+    width:1480px;
+    margin:auto
+}
+.padd{
+    margin-right: -110px;
+    /* margin-left:20px */
+
+
+}
+.daypadd{
+    margin-right: -55px;
+    /* margin-left:20px */
+
+
+
+}
+.daycontainer{
+    /* background-color:red; */
+    width:58%;
+    /* margin-left: 50px; */
+    margin: auto;
+}
+.wayspadd{
+    margin-right: -30px;
+
+}
+.cultpadd{
+    margin-right: 70px;
+
+}
+.cultcontainer{
+    /* background-color:red; */
+    width:78%;
+    /* margin-left: 50px; */
+    margin: auto;
+    margin-left: -100px;
+}
+
+.container{
+    /* background-color:red; */
+    width:58%;
+    /* margin-left: 50px; */
+    margin: auto;
+}
+.wayscontainer{
+    width:78%;
+    margin-left: -115px;
+    /* margin: auto; */
+}
+
+.places,.topattr{
+    margin:50px; 
+    margin-left:800px;
+    font-weight:700;
+    font-size:64px;
+}
+.places{
+    margin-left:20%
+}
+.tophr{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.link{
+    text-decoration: none;
+}
+.link >Link {
+    color:black;
+}
+
+.day{
+    width:330px
+}
+.day > p:nth-child(1),.day > p:nth-child(3){
+    font-size:24px;
+    font-weight:600
+}
+.heading{
+    margin-left:21%;
+    margin-bottom: 20px;
+}
+.hr{
+    width:1400px;
+    margin-top:80px;
+    margin-bottom: 80px;
+}

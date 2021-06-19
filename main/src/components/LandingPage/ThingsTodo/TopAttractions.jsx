@@ -1,17 +1,21 @@
 import React from 'react'
-import  Carousel  from './TopAttrComp'
 import {TopAttrComp} from './TopAttrComp'
+import styles from './abhu.module.css'
 
 function TopAttractions(){
 
     return(
         <div>
-            <h2> Top Attractions in Dhubai</h2> 
+            <hr className={styles.tophr}/>
+            <hr  className={styles.tophr}/>
+            <h2 className={styles.topattr}> Top Attractions in Dhubai</h2> 
             <TopAttrComp value={"Top_Attractions"} />
             <TopAttrComp value={"TopAttr2"} />
             <TopAttrComp value={"TopAttr3"} />
-
-            {/* <Carousel/> */}
+            <div>
+                     <hr style={{marginTop:"180px",width:"1500px",marginBottom:"150px"}}/>
+                 </div>
+                 
         </div>
     )
 }
