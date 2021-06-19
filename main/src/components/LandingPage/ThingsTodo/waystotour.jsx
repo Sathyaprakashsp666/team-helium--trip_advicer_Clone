@@ -28,7 +28,7 @@ const WaysToTourDhubai = ({ deviceType }) => {
 
     function getData(){
         // This is placed inside 
-        axios.get("http://localhost:3000/ways_to_tour_dhubai")
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/ways_to_tour_dhubai")
         .then(res => {
             const value = res.data
             console.log(value);

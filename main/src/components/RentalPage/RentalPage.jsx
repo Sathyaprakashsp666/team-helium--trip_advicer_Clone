@@ -5,6 +5,8 @@ import RentalsContainer from "./RentalContainer";
 import axios from "axios";
 import LeftContainer from "./LeftContainer";
 import RentalNavbar from "./RentalNavbar";
+import { Links } from "./Links";
+import HotelFooter from "./RentalFooter";
 
 const RentalPage = () => {
   const [rentalData, setRentalData] = useState([]);
@@ -21,7 +23,7 @@ const RentalPage = () => {
     axios
       .get("https://json-mock-server-trip-advicer.herokuapp.com/rentals")
       .then((res) => {
-        // console.log(res.data);
+        console.log(res.data);
         setRentalData(res.data);
         setIsLoading(false);
       })
@@ -41,13 +43,13 @@ const RentalPage = () => {
     if (sortByCost == null) {
       return null;
     }
-    if (sortByCost == "lowtohigh") {
+    if (sortByCost === "lowtohigh") {
       return a.price - b.price;
     }
-    if (sortByCost == "hightolow") {
+    if (sortByCost === "hightolow") {
       return b.price - a.price;
     }
-    if (sortByCost == "rating") {
+    if (sortByCost === "rating") {
       return a.reviews - b.reviews;
     }
   };
@@ -55,8 +57,8 @@ const RentalPage = () => {
   return (
     <div>
       <RentalNavbar />
+      <Links />
       <h1 className={styles.head_title}>Holiday Rentals in Vagamoon</h1>
-
       <div className={styles.rentalas_top_cont}>
         <div className={styles.rentals_left_cont}>
           <LeftContainer />
@@ -103,8 +105,11 @@ const RentalPage = () => {
                 </>
               );
             })}
+           
         </div>
       </div>
+      <br /> <br /> <br />
+      <HotelFooter />
     </div>
   );
 };

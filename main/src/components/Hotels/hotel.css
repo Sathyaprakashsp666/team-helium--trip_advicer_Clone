@@ -56,6 +56,11 @@
   font-size: 15px;
   font-weight: 600;
 }
+.view-deal-btn:hover{
+  background: #f0c758;
+  border-color: #f5cc5e;
+  color: rgb(49, 48, 48);
+}
 .partner-logo-div>h2{
   padding-left: 30%;
 }
@@ -101,7 +106,7 @@
 
 .left-sidebar-div{
     width: 20%;
-    height: 900px;
+    height: 1230px;
     border: 1px solid black;
     margin-left: 70px;
     margin-top: 50px;
@@ -340,4 +345,139 @@ hr{
   font-size: small;
   color: whitesmoke;
   font-weight: normal;
+}
+
+
+
+/* footer part for hotel search */
+
+.footer-main-div-comp{
+  width: 100%;
+  height: 150px;
+  float: left;
+  background: #FAF1ED;
+}
+
+.footer-terms-conditions{
+  width: 60%;
+  height: 100px;
+  margin-top: 25px;
+  margin-left: 100px;
+  float: left;
+  
+  display: grid;
+  grid-template: "div" "div";
+}
+
+.footer-t-c-info-logo{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.footer-t-c-info-logo>img{
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.All-rights{
+  width: 90%;
+  float: left;
+  height: 25px;
+  margin-left: 2%;
+}
+.footer-t-c-links{
+  width: 90%;
+  float: left;
+  height: 40px;
+  margin-left: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.terms-cond-link-styles{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(66, 64, 64);
+}
+.terms-cond-link-styles:hover{
+  color: rgb(114, 109, 109);
+}
+.copyright-info{
+  font-size: 13px;
+}
+
+.more{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.more:hover{
+  text-decoration: underline;
+  color: black;
+}
+.currency-country{
+  width: 30%;
+  height: 40px;
+  float: left;
+  margin-top: 30px;
+  display: grid;
+  grid-template: "select select";
+  gap: 20px;
+}
+
+.currency-country>select{
+  border-radius: 10px;
+  outline: none;
+}
+.select-currency{
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.select-country{
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
+  
+}
+
+
+
+/* header */
+
+.header-main-div{
+  width: 100%;
+  height: 250px;
+  border-bottom: 2px solid rgb(148, 146, 146);
+}
+
+.header-map-div{
+  width: 20%;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 5.5%;
+  float: left;
+}
+.header-map-div>img{
+  width: 100%;
+  height: 150px;
+}
+.header-city-text{
+  width: 60%;
+  height: 150px;
+  margin-top: 50px;
+  float: left;
+  margin-left: 2%;
+}
+.city-name-div{
+  width: 100%;
+  height: 50px;
+  
+}
+.checkin-checkout{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.checkin{
+  border-radius: 10px;
 }
