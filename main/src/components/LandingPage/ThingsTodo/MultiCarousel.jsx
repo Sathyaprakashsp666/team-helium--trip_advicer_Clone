@@ -5,7 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { Image } from "semantic-ui-react";
 import axios from "axios";
 import React from "react";
-// import styles from './abhu.module.css'
+import styles from './abhu.module.css'
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -24,15 +24,14 @@ const responsive = {
   }
 };
 let images = []
-const DayTrips = ({ deviceType },props) => {
+const DayTrips = ({ deviceType }) => {
     const [data,setData] = React.useState([])
-
     function getData(){
         // This is placed inside 
-        axios.get(`http://localhost:3000/${props.value}`)
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/daytrips")
         .then(res => {
             const value = res.data
-            console.log(value);
+            console.log("day"+value);
           
           setData(value);
         })
@@ -43,26 +42,31 @@ const DayTrips = ({ deviceType },props) => {
     console.log(images);
     return (
         <div>
-            <h2>{props.txt}</h2>
+            <h2 className={styles.heading}>Day Trips</h2>
             <Carousel
                 ssr
                 partialVisbile
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
+                itemClass={styles.daypadd}
+                containerClass = {styles.daycontainer}
+               
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "60%", height: "100%" }}
+                        style={{ width: "80%", height: "100%" }}
                         src={image[0]}
                     />
-                    <h3>{image[1]}</h3>
-                    <h4>{image[2]}</h4>
-                    <h5>{image[3]}</h5>
-                    hiiii
+                    <div className={styles.day}>
+                      <p>{image[1]}</p>
+                      <p>{image[2]}</p>
+                      <p>{image[3]}</p>
+                    </div>
+                    
                     </div>
                     );
                 })}

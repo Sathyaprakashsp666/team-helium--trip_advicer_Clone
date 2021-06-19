@@ -1,3 +1,4 @@
+// cultural_and_theme_tours
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 
@@ -23,15 +24,13 @@ const responsive = {
   }
 };
 let images = []
-const WaysToTourDhubai = ({ deviceType }) => {
+const Outdoor = ({ deviceType }) => {
     const [data,setData] = React.useState([])
-
     function getData(){
         // This is placed inside 
-        axios.get("http://localhost:3000/ways_to_tour_dhubai")
+        axios.get("https://json-mock-server-trip-advicer.herokuapp.com/outdooractivities")
         .then(res => {
             const value = res.data
-            console.log(value);
           
           setData(value);
         })
@@ -41,32 +40,33 @@ const WaysToTourDhubai = ({ deviceType }) => {
     {images = data.map((item) =>{ return( [item.img,item.text,item.tour,item.cost])})}
     console.log(images);
     return (
-        <div  style={{marginLeft:"25%"}}>
-        <div  style={{marginLeft:"-6%", marginTop:"100px"}}>
-            <h2 style={{fontWeight:"bold",fontFamily:"sans-serif"}}>Ways to tour Abu Dhabi</h2>
-            <h4 style={{color:"grey",marginBottom:"10px"}}>Book these experiences for a close-up look at Abu Dhabi</h4>
-            </div>    
+        <div>
+            <h2 className={styles.heading}>Outdoor Activities</h2>
             <Carousel
                 ssr
                 partialVisbile
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
-                itemClass={styles.wayspadd}
-                containerClass = {styles.wayscontainer}
+                itemClass={styles.daypadd}
+                containerClass = {styles.daycontainer}
+               
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "90%", height: "100%" }}
+                        style={{ width: "80%", height: "100%" }}
                         src={image[0]}
                     />
-                     <h3 style={{width:"350px"}}>{image[1]}</h3>
-                    <p>{image[2]}</p>
-                    <p style={{fontWeight:700,fontSize:"24px"}}>{image[3]}</p>
-                                        </div>
+                   <div className={styles.day}>
+                      <p>{image[1]}</p>
+                      <p>{image[2]}</p>
+                      <p>{image[3]}</p>
+                    </div>
+                    
+                    </div>
                     );
                 })}
             </Carousel>
@@ -74,6 +74,4 @@ const WaysToTourDhubai = ({ deviceType }) => {
     )
 }
 
-
-// export default Simple;
-export {WaysToTourDhubai}
+export {Outdoor}

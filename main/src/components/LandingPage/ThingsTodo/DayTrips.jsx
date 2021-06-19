@@ -1,16 +1,20 @@
 import { DayTrips } from "./MultiCarousel";
-
-
-function DayTrips1(){
+import {Outdoor} from './outdoor'
+import {Cruises} from './Cruises'
+import styles from './abhu.module.css'
+function DayTripss(){
     return(
         <div>
-            <DayTrips value = {"daytrips"} txt ={"Day Trips"}/>
-            <DayTrips value = {"outdooractivities"} txt = {"Outdoor Activities"}/>
-            <DayTrips value = {"cruises"} txt = {"Cruises, Sailing & Water Tours"}/>
-
-
+            <hr className={styles.hr} />
+            <DayTrips/>
+            <hr/>
+            <hr className={styles.hr}/>
+           <Outdoor/>
+           <hr className={styles.hr}/>
+           <hr className={styles.hr}/>
+            <Cruises/>
 
         </div>
     )
 }
-export {DayTrips1}
+export {DayTripss}

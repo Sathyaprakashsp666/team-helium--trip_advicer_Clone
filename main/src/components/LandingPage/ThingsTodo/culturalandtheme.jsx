@@ -5,11 +5,11 @@ import 'react-multi-carousel/lib/styles.css';
 import { Image } from "semantic-ui-react";
 import axios from "axios";
 import React from "react";
-// import styles from './abhu.module.css'
+import styles from './abhu.module.css'
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 4,
     paritialVisibilityGutter: 60
   },
   tablet: {
@@ -42,26 +42,29 @@ const Cultural = ({ deviceType }) => {
     {images = data.map((item) =>{ return( [item.img,item.text,item.tour,item.cost])})}
     console.log(images);
     return (
-        <div>
-            <h2>Cultural & Theme Tours</h2>
+        <div  style={{marginLeft:"25%"}}>
+            <h2 style={{marginLeft:"-100px",marginBottom:"30px"}}>Cultural & Theme Tours</h2>
             <Carousel
                 ssr
-                partialVisbile
+                // partialVisbile
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
+                itemClass={styles.cultpadd}
+                containerClass = {styles.cultcontainer}
+                centerMode = {true}
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "60%", height: "100%" }}
+                        style={{ width: "120%", height: "100%" }}
                         src={image[0]}
                     />
-                    <h3>{image[1]}</h3>
-                    <h4>{image[2]}</h4>
-                    <h5>{image[3]}</h5>
+                    <p style={{fontWeight:700,fontSize:"24px"}}>{image[1]}</p>
+                    <p>{image[2]}</p>
+                    <p style={{fontWeight:600,fontSize:"24px"}}>{image[3]}</p>
                     </div>
                     );
                 })}

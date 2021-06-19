@@ -4,7 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { Image } from "semantic-ui-react";
 import axios from "axios";
 import React from "react";
-// import styles from './abhu.module.css'
+import styles from './abhu.module.css'
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -42,28 +42,34 @@ const PopularThings = ({ deviceType }) => {
     console.log(images);
     return (
         <div>
-            <h2>Popular things to do</h2>
+            <h2 style={{marginLeft:"21%",marginTop:"200px",fontWeight:650,marginBottom:"20px"}}>Popular things to do</h2>
             <Carousel
+             partialVisbile = {false}
                 ssr
-                partialVisbile
                 deviceType={deviceType}
                 itemClass="image-item"
                 responsive={responsive}
+                containerClass="carousel-container"
+                // centerMode={true} 
+                itemClass={styles.padd}
+                containerClass = {styles.container}
+                slidesToSlide={4}
                 >
                 {images.slice(0, 11).map(image => {
                     return (
                         <div>
                     <Image
                         draggable={false}
-                        style={{ width: "60%", height: "100%" }}
+                        style={{ width: "70%", height: "100%" }}
                         src={image[0]}
                     />
-                    <h3>{image[1]}</h3>
+                    <h3 style={{color: "white",marginTop:"-50px",marginLeft:"10px",fontWeight:700}}>{image[1]}</h3>
                     
                     </div>
                     );
                 })}
             </Carousel>
+            <hr style={{marginTop:"120px",width:"1400px"}}/>
         </div>
     )
 }
