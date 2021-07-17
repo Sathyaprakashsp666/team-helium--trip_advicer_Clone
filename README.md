@@ -49,3 +49,11 @@ vercel: https://trip-advicer-clone-team-helium.netlify.app/
 
 ![alt text](https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/185188120/original/b084c38d746e1cc36e133e7557c06c4e47a45198/create-responsive-websites-using-html-css-javascript-react.jpeg "Logo Title Text 1")
 
+## Learn More
+
+> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+> You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+> To learn React, check out the [React documentation](https://reactjs.org/).
+
