@@ -12,29 +12,33 @@ Tripadvisor, Inc. is an American online travel company that operates a website a
 - [@manohar-kanduri-vst-au4](https://github.com/manohar-kanduri-vst-au4)
 - [@uudaykuma](https://github.com/uudaykuma)
 
-# Installing and Running
+## Installing and Running
+> Executing the commands mentioned below one by one in your command line will help in making this React app up and running on your system in the development mode.
+> 
+> ```bash
+> git clone https://github.com/Sathyaprakashsp666/team-helium--trip_advicer_Clone.git
+> cd ./team-helium--trip_advicer_Clone
+> npm install
+> npm start
+> ```
+> After entering the commands mentioned above, open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
-git clone 'https://github.com/Sathyaprakashsp666/team-helium--trip_advicer_Clone.git'
+## NPM Packages used 
+> ### react ![React](https://img.shields.io/npm/v/react.svg)
+> ### react-dom ![React-dom](https://img.shields.io/npm/v/react-dom.svg)
+> ### axios ![axios](https://img.shields.io/npm/v/axios.svg)
+> ### react-icons ![react-icons](https://img.shields.io/npm/v/react-icons.svg)
+> ### react-router-dom ![react-router-dom](https://img.shields.io/npm/v/react-router-dom.svg)
+> ### styled-components ![styled-components](https://img.shields.io/npm/v/styled-components.svg)
 
-npm install
+### Snapshots from the built product
 
-cd ./team-helium--trip_advicer_Clone
+![Sathya Prakasha P](https://github.com/Sathyaprakashsp666/team-helium--trip_advicer_Clone/blob/main/Navbar.png)
+<br/><br/>
+![Sathya Prakasha P](https://github.com/Sathyaprakashsp666/team-helium--trip_advicer_Clone/blob/main/landing_page.png)
+<br/><br/>
+![Sathya Prakasha P](https://github.com/Sathyaprakashsp666/team-helium--trip_advicer_Clone/blob/main/rental_page.png)
 
-npm start
-
-## NPM Packages used
-
-#### react React   v17.0.2
-***
-
-####  react-dom React-dom  v17.0.2
-***
-
-####  react-router-dom react-router-dom v17.0.2
-***
-
-####  styled-components v5.3.0
-***
 
 
 ## Hosted Platform 
