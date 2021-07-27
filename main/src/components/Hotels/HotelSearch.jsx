@@ -80,7 +80,7 @@ const HotelSearch = () => {
     setPage(selected);
   };
   const handleHotelSearch = async () => {
-    const { data } = await axios.get(`http://localhost:4500/pune`);
+    const { data } = await axios.get(`https://json-mock-server-trip-advicer.herokuapp.com/pune`);
     setHotelData(data);
   };
   useEffect(() => {

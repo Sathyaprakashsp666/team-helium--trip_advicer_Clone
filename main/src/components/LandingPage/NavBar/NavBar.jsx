@@ -109,7 +109,7 @@ function NavBar() {
         <div >
           <Button
             value={
-              <Link className={styles.link} to="/things">
+              <Link className={styles.link} to="/">
                 <Hotels
                   value={<p>Things to do</p>}
                   src="https://cdn3.iconfinder.com/data/icons/lineapp-icons-for-mobile-app/100/History-512.png"
