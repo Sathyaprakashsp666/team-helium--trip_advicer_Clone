@@ -1,0 +1,171 @@
+.rentalas_top_cont {
+  width: 1230px;
+  min-height: 2000px;
+  margin: 16px 35px 0px 35px;
+  /* background-color: #ffffff; */
+  padding: 0 24px 0 24px;
+  /* border: 1px solid saddlebrown; */
+  background-color: #f2f2f2;
+}
+
+.rentals_left_cont {
+  width: 240px;
+  min-height: 2000px;
+  padding: 24px 24px 24px 24px;
+  border: 1px solid #e0e0e0;
+  float: left;
+  margin-right: 30px;
+}
+.rentals_right_cont {
+  width: 900px;
+  min-height: 2000px;
+  /* border: 1px solid black; */
+  float: left;
+}
+.sort_cont {
+  display: flex;
+  height: 50px;
+  width: 900px;
+  /* border: 1px solid cyan; */
+}
+.sort_cont div {
+  width: 50%;
+  height: 50px;
+  /* border: 1px solid red; */
+}
+.sorting_cont {
+  padding-left: 300px;
+}
+.sorting_cont_input {
+  width: 152px;
+  height: 14px;
+  border: 1px solid #d3d3d3;
+}
+.loading {
+  margin-left: 360px;
+  margin-top: 20px;
+}
+.head_title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.top_calender {
+  display: flex;
+  width: 1200px;
+  height: 100px;
+  border: 1px solid gray;
+  margin: auto;
+  align-items: center;
+}
+.top_calender div {
+  width: 33%;
+  height: 70px;
+  border: 1px solid red;
+}
+
+/* //For Containers */
+.container_top {
+  display: flex;
+  min-height: 220px;
+  width: 850px;
+  border: 1px solid #e0e0e0;
+  padding: 16px 16px 16px 16px;
+  background-color: #ffffff;
+  margin-left: 80px;
+  /* border: 1px solid red; */
+}
+
+.container_top div {
+  width: 33%;
+  /* border: 1px solid green; */
+  margin: 5px;
+}
+.info_cont div {
+  width: 280px;
+  height: 21px;
+  /* border: 1px solid cyan; */
+  margin: 0 0 5px 0;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.gray {
+  color: #575757;
+  font-size: 14px;
+}
+.price_btn {
+  background-color: #f2b203;
+  height: 36px;
+  width: 276px;
+  color: black;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #fee190;
+  border-radius: 30px;
+}
+.price_cont {
+  margin-left: 50px;
+}
+.pln {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.prevnext_btn {
+  background-color: white;
+  border: none;
+}
+.more_info {
+  color: #575757;
+  border: none;
+}
+.rental_length {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-left: 100px;
+}
+.more_info_cont {
+  padding-left: 40px;
+  display: flex;
+  /* border: 1px solid cyan; */
+}
+.calender input {
+  width: 80px;
+}
+.calender {
+  color: #474747;
+  font-size: 13px;
+}
+/* .more_info_cont :nth-child(1) {
+  width: 40%;
+  border: 1px solid salmon;
+} */
+.more_info_cont div {
+  width: 48%;
+  margin: 2%;
+  /* background-color: #ffffff; */
+}
+.more_info_review {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+.more_info_title {
+  font-size: 18px;
+  color: #474747;
+}
+.more_info_para {
+  font-size: 16px;
+  line-height: 16px;
+  color: #474747;
+}
+.more_info_about {
+  font-size: 16px;
+  line-height: 20px;
+  color: #474747;
+}

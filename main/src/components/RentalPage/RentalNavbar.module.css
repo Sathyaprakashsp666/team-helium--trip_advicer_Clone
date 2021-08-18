@@ -1,0 +1,44 @@
+.navbar__top_cont {
+  display: flex;
+  width: 90%;
+  height: 80px;
+  /* border: 1px solid black; */
+  margin: auto;
+  padding-top: 10px;
+  background-color: white;
+}
+.navbar__top_cont div {
+  width: 50%;
+  height: 75px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.navbar__search input {
+  width: 322px;
+  height: 32px;
+  border: 1px solid #e0e0e0;
+}
+.navbar__search button {
+  height: 32px;
+  border: 1px solid #e0e0e0;
+}
+.navbar__top_right_cont {
+  display: flex;
+}
+.navbar__top_right_cont button {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar_signin button{
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+ 
+}
