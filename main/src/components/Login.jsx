@@ -26,7 +26,7 @@ export default function Login() {
 
         <image src={url} alt={name} />
         <GoogleLogin
-          clientId="459195761612-ggleb5pijshcq81q1p5svdit5ikieqc3.apps.googleusercontent.com"
+          clientId="220500515822-tmchgal083vl19usea8r4e2g6trq02fc.apps.googleusercontent.com"
           buttonText="Login"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}

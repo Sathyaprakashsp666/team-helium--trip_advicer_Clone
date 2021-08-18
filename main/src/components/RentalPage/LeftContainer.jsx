@@ -31,7 +31,7 @@ const LeftContainer = () => {
           />
           <label for="kid-frindly"> Kid friendly</label>
           <br />
-          <input type="checkbox" id="elder" name="elder" value="elder" />
+          <input type="checkbox" id="elder" name="elder" value="elder" />&nbsp;
           <label for="elder"> Elder access</label>
           <br />
           <input type="checkbox" id="smoking" name="smoking" value="smoking" />
