@@ -1,6 +1,6 @@
 // https://json-mock-server-trip-advicer.herokuapp.com/rentals
 
-import React from "react";
+
 import styles from "./FetchingRentals.module.css";
 import RentalsContainer from "./RentalsContainer";
 const FetchingRental = () => {
