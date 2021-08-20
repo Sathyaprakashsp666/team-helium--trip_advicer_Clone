@@ -25,9 +25,9 @@ const AllRoutes = () => {
           <Login />
         </Route>
 
-        {/* <Route exact path="/things">
+        {<Route exact path="/things">
           <AbhuDhabi />
-        </Route> */}
+        </Route>}
 
         <Route>404 Page Not Found</Route>
       </Switch>
